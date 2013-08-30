@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<!-- <link rel="stylesheet" href="http://dev.weather.com.cn/n/c/test/common.css" /> -->
+<!-- <link rel="stylesheet" href="http://dev.weather.com.cn/n/c/test/zs.css" /> -->
+<script type="text/javascript" language="JavaScript" src="./jquery-1.8.2.js"></script>
+<!-- <script type="text/javascript" language="JavaScript" src="http://dev.weather.com.cn/n/j/test/jquery.easing.1.3.js"></script> -->
+<!-- <script type="text/javascript" language="JavaScript" src="http://dev.weather.com.cn/n/j/test/zsLevel.js"></script> -->
+<script type="text/javascript" language="JavaScript" src="./color.js"></script>
+<script type="text/javascript" language="JavaScript" src="http://dev.weather.com.cn/n/j/test/raphael-min.js"></script>
+<!-- <script type="text/javascript" language="JavaScript" src="http://dev.weather.com.cn/n/j/test/common.js"></script> -->
+<!-- <script type="text/javascript" language="JavaScript" src="http://dev.weather.com.cn/n/j/test/zs.js"></script> -->
+<!-- <script type="text/javascript" language="JavaScript" src="http://dev.weather.com.cn/n/j/test/zsGetData.js"></script> -->
+<script type="text/javascript" language="JavaScript" src="./line.js"></script>
+<!-- <script type="text/javascript" language="JavaScript" src="http://dev.weather.com.cn/n/j/test/pie.js"></script> -->
+<script>
+			//指数种类初始化
+			var zstype = "tr",
+				cityid = "101010100";
+			//初始化color
+			var color;
+			$.each(zsColor,function(i,o){
+				if(o.zstype == zstype){
+					color = o.color;
+			 return false;
+			}
+			})
+		</script>
+<script>
+var aaa='{"it":{"it0":"20130491100","it1":"紫外线","it2":"uv","it3":[{"it31":"强","it32":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","it33":"201304090000"},{"it31":"中等","it32":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","it33":"201304090300"},{"it31":"中等","it32":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","it33":"201304090600"},{"it31":"中等","it32":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","it33":"201304090900"},{"it31":"中等","it32":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","it33":"201304091200"},{"it31":"中等","it32":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","it33":"201304091500"},{"it31":"中等","it32":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","it33":"201304091800"},{"it31":"中等","it32":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","it33":"201304092100"},{"it31":"中等","it32":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","it33":"201304100000"},{"it31":"中等","it32":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","it33":"201304100300"},{"it31":"中等","it32":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","it33":"201304100600"},{"it31":"中等","it32":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","it33":"201304100900"},{"it31":"中等","it32":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","it33":"201304101200"},{"it31":"中等","it32":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","it33":"201304101500"},{"it31":"中等","it32":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","it33":"201304101800"},{"it31":"中等","it32":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","it33":"201304102100"},{"it31":"中等","it32":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","it33":"201304110000"},{"it31":"中等","it32":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","it33":"201304110300"},{"it31":"中等","it32":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","it33":"201304110600"},{"it31":"中等","it32":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","it33":"201304110900"},{"it31":"中等","it32":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","it33":"201304111200"},{"it31":"中等","it32":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","it33":"201304111500"},{"it31":"中等","it32":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","it33":"201304111800"},{"it31":"中等","it32":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","it33":"201304112100"}],"it4":[{"it41":"弱"},{"it41":"较弱"},{"it41":"中等"},{"it41":"强"},{"it41":"极强"}]}}';
+</script>
+</head>
+<body>
+	<div id="svgArea"></div>
+</body>
+</html>
