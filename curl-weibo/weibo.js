@@ -45,51 +45,6 @@ function getWeibo(url, callback) {
 	);
 }
 var weiboConfig = [{
-		'desc': '气象北京',
-		'url': 'http://e.weibo.com/qixiangbj'
-	}
-	// ,{
-	// 	'desc': '中国天气网'
-	// 	,'url': 'http://e.weibo.com/weather01'
-	// }
-	// ,{
-	// 	'desc': '浙江天气'
-	// 	,'url': 'http://e.weibo.com/u/1917050314'
-	// }
-	// ,{
-	// 	'desc': '内蒙古气象服务'
-	// 	,'url': 'http://e.weibo.com/u/2735907942'
-	// }
-	// ,{
-	// 	'desc': '吉林气象'
-	// 	,'url': 'http://e.weibo.com/u/2506600245'
-	// }
-	// ,{
-	// 	'desc': '中国天气生活'
-	// 	,'url': 'http://e.weibo.com/u/1400737000'
-	// }
-	// ,{
-	// 	'desc': '江西气象微博'
-	// 	,'url': 'http://e.weibo.com/u/2730752854'
-	// }
-	// ,{
-	// 	'desc': '黑龙江省气象服务中心'
-	// 	,'url': 'http://e.weibo.com/hljqxfw'
-	// }
-	, {
-		'desc': '宁夏天气-宁夏气象',
-		'url': 'http://e.weibo.com/u/2642215773'
-	}
-	// ,{
-	// 	'desc': ''
-	// 	,'url': ''
-	// }
-	// ,{
-	// 	'desc': ''
-	// 	,'url': ''
-	// }
-];
-var weiboConfig = [{
 	"desc": "旅游天气网",
 	"url": "http://weibo.com/2678492723"
 }, {
