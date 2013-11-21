@@ -1,4 +1,8 @@
 var jsdom = require('jsdom');
+var fs = require('fs');
+var path = require('path');
+
+var jquery = fs.readFileSync(path.join(__dirname,'jquery.js')).toString();
 
 var REG_JSON = /{.*}/;
 
@@ -26,12 +30,14 @@ Date.prototype.format = function(format){
 	
 	return format;
 }
+/*抓取微博核心方法*/
 function getWeibo(url, callback) {
 	var returnVal = {index:__index++}
 	callback || (callback = function(){});
-	jsdom.env(
-		url, ["http://code.jquery.com/jquery.js"],
-		function(errors, window) {
+	jsdom.env({
+		url: url,
+		src: [jquery],
+		done: function(errors, window) {
 			if(errors){
 				callback(errors);
 			}
@@ -102,10 +108,11 @@ function getWeibo(url, callback) {
 			returnVal.list = itemList.splice(0,3);
 			callback(null,returnVal);
 		}
-	);
+	});
 }
 
-var weiboConfig = require('./conf').conf;
+var conf = require('./conf');
+var weiboConfig = conf.conf;
 var startTime = +new Date();
 var num = weiboConfig.length;
 var totalNum = num;
@@ -123,10 +130,14 @@ weiboConfig.forEach(function(v) {
 			console.log('==== 共',totalNum,'个微博，总用时 ',+new Date()-startTime,' ms ===');
 			var ejs = require('ejs')
 				, fs = require('fs')
-  				, path = __dirname + '/weibo.html'
-  				, str = fs.readFileSync(path, 'utf8');
-			var ret = ejs.render(str,{dataArr:dataArr,escape:function(html){return String(html).replace(/^\s+|\s+$/,'').replace('\'',"\'")}});
-			fs.writeFileSync(__dirname+'/result.html',ret, 'utf8');
+  				, str = fs.readFileSync(conf.tplFilePath, 'utf8');
+			var ret = ejs.render(str,{
+				dataArr: dataArr,
+				escape: function(html){
+					return String(html).replace(/^\s+|\s+$/,'').replace('\'',"\'")
+				}
+			});
+			fs.writeFileSync(conf.resultFilePath,ret, 'utf8');
 		}
 	});
 });

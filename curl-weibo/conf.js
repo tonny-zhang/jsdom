@@ -185,5 +185,8 @@ var weiboConfig = [{
 // 	"url": "http://weibo.com/gdweather"
 // }
 // ]
-
+var path = require('path');
+var currentDir = __dirname;
 exports.conf = weiboConfig;
+exports.tplFilePath = path.join(currentDir,'weibo.ejs');
+exports.resultFilePath = path.join(currentDir,'weibo','index.html');
