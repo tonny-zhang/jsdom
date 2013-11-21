@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="dns-prefetch" href="http://i.tq121.com.cn">
+<meta charset="utf-8" />
+<title>微频道-中国天气网-专业天气预报、气象服务门户</title>
+<meta  name="keywords" content="天气,天气预报,北京天气,天气在线,气候,气象" />
+<meta name="description" content="中国天气网为您提供实时全国天气气象信息,及时发布天气预报、灾害预警、气象云图、旅游天气、台风、暴雨雪等气象信息，为我国的生产生活提供全面精确的气象服务" />
+<meta name="msapplication-task" content="name=天气资讯;action-uri=http://www.weather.com.cn/news/index.shtml;icon-uri=http://www.weather.com.cn/favicon.ico" />
+<meta name="msapplication-task" content="name=生活天气;action-uri=http://www.weather.com.cn/life/index.shtml;icon-uri=http://www.weather.com.cn/favicon.ico" />
+<meta name="msapplication-task" content="name=气象科普;action-uri=http://www.weather.com.cn/science/index.shtml;icon-uri=http://www.weather.com.cn/favicon.ico" />
+<meta name="msapplication-task" content="name=灾害预警;action-uri=http://www.weather.com.cn/alarm/index.shtml;icon-uri=http://www.weather.com.cn/favicon.ico" />
+<meta name="msapplication-task" content="name=旅游天气;action-uri=http://www.weather.com.cn/trip/index.shtml;icon-uri=http://www.weather.com.cn/favicon.ico" />
+<script type="text/javascript" src="http://i.tq121.com.cn/j/core.js"></script>
+<script>W.css('http://i.tq121.com.cn/c/core.css','http://i.tq121.com.cn/c/weibo/index.css');</script>
+<!--[if lt IE 7]>
+<script>
+W.use('j/tool/DD_belatedPNG',function(DD_belatedPNG){
+  DD_belatedPNG.fix(".box a,toolBar_nav_hover,.tagNav h1,.huadong,.huabei,.huazhong,.huanan,.xibei,.xinan,.dongbei,.gangaotai");
+});
+</script>
+<![endif]-->
+</head>
+<body>
+<div class="toolBar">
+	<div class="box">
+        <a class="toolBar_logo fl" title="中国天气网"  href="/"></a>
+        <div class="toolBar_nav fr">
+        	<a id="btn_sethome" class="toolBarA" title="设为首页" href="javascript:;">设为首页</a>
+            <i></i>
+            <a id="btn_fav" class="toolBarA" title="收藏" href="javascript:;">收藏</a>
+            <i></i>
+            <a id="toolBar_nav_hover" class="toolBar_nav_hover" title="省级站" href="javascript:;">省级站</a>
+            <i></i>
+            <a class="toolBarA" title="Englis Version" href="/english/">Englis Version</a>
+            <i></i>
+            <a id="btn_translate" class="toolBarA" title="繁體中文" href="javascript:;">繁體中文</a>
+        </div> 	
+    </div>
+    <div id="cityBoardFather" class="cityBoardFather">
+    	<div class="box">
+        	<ul class="cityBoard">
+            	<li class="borderBottom">
+                	<ul>
+                    	<li class="huadong">
+                        	<a href="http://sd.weather.com.cn" title="山东">山东</a>
+                            <a href="http://js.weather.com.cn" title="江苏">江苏</a>
+                            <a href="http://ah.weather.com.cn" title="安徽">安徽</a>
+                            <a href="http://zj.weather.com.cn" title="浙江">浙江</a>
+                            <a href="http://fj.weather.com.cn" title="福建">福建</a>
+                            <a href="http://sh.weather.com.cn" title="上海">上海</a>                          
+                        </li>
+                    	<li class="huabei">
+                        	<a href="http://bj.weather.com.cn" title="北京">北京</a>
+                            <a href="http://tj.weather.com.cn" title="天津">天津</a>
+                            <a href="http://hebei.weather.com.cn" title="河北">河北</a>
+                            <a href="http://shanxi.weather.com.cn" title="山西">山西</a>
+                            <a href="http://nmg.weather.com.cn" title="内蒙古">内蒙古</a>
+                        </li>
+                    	<li class="huazhong">
+                        	<a href="http://hubei.weather.com.cn" title="湖北">湖北</a>
+                            <a href="http://hunan.weather.com.cn" title="湖南">湖南</a>
+                            <a href="http://henan.weather.com.cn" title="河南">河南</a>
+                            <a href="http://jx.weather.com.cn" title="江西">江西</a>
+                        </li>
+                    	<li class="huanan">
+                        	<a href="http://gd.weather.com.cn" title="广东">广东</a>
+                            <a href="http://gx.weather.com.cn" title="广西">广西</a>
+                            <a href="http://hainan.weather.com.cn" title="海南">海南</a>
+                        </li>
+                    	<li class="xibei">
+                        	<a href="http://nx.weather.com.cn" title="宁夏">宁夏</a>
+                            <a href="http://xj.weather.com.cn" title="新疆">新疆</a>
+                            <a href="http://qh.weather.com.cn" title="青海">青海</a>
+                            <a href="http://shaanxi.weather.com.cn" title="陕西">陕西</a>
+                            <a href="http://gs.weather.com.cn" title="甘肃">甘肃</a>
+                        </li>
+                    	<li class="xinan">
+                        	<a href="http://sc.weather.com.cn" title="四川">四川</a>
+                            <a href="http://yn.weather.com.cn" title="云南">云南</a>
+                            <a href="http://gz.weather.com.cn" title="贵州">贵州</a>
+                            <a href="http://xz.weather.com.cn" title="西藏">西藏</a>
+                            <a href="http://cq.weather.com.cn" title="重庆">重庆</a>
+                        </li>
+                    	<li class="dongbei">
+                        	<a href="http://ln.weather.com.cn" title="辽宁">辽宁</a>
+                            <a href="http://jl.weather.com.cn" title="吉林">吉林</a>
+                            <a href="http://hlj.weather.com.cn" title="黑龙江">黑龙江</a>
+                        </li>
+                    	<li class="gangaotai">
+                        	<a href="http://www.weather.com.cn/html/province/taiwan.shtml" title="台湾">台湾</a>
+                            <a href="http://www.weather.com.cn/html/province/xianggang.shtml" title="香港">香港</a>
+                            <a href="http://mo.weather.com.cn/" title="澳门">澳门</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>	
+    </div> 
+</div> 
+<div class="content">
+	<div class="box clearfix layout-horizontal box4col">
+    	<ul class="BlogFather conLeft">
+			<li class="weather borderBg" data-notlayout="true">
+			    <script type="text/javascript" src="http://ext.weather.com.cn/55336.js"></script>
+			</li>
+			<li class="tagNav borderBg" data-notlayout="true" data-pos="after">
+			    <h1>微频道</h1> 
+			    <div class="tagNavCon clearfix">
+					<a href="http://www.weather.com.cn/alarm/">灾害预警</a>
+					<a href="http://www.weather.com.cn/fzjz/">防灾减灾</a>
+					<a href="http://www.weather.com.cn/live/">现在天气</a>
+					<a href="http://www.weather.com.cn/forecast/">天气预报</a>
+					<a href="http://www.weather.com.cn/life/">生活</a>
+					<a href="http://www.weather.com.cn/trip/">旅游</a>
+					<a href="http://typhoon.weather.com.cn/">台风</a>
+					<a href="http://www.xn121.com/">农业</a>
+					<a href="http://cwera.weather.com.cn/">能源</a>
+					<a href="http://www.weather.com.cn/static/html/product/">服务产品</a>
+					<a href="http://www.weather.com.cn/static/html/product_wx.shtml">卫星</a>
+					<a href="http://www.weather.com.cn/static/html/product_ld.shtml">雷达</a>
+					<a href="http://www1.weather.com.cn/news/">新闻</a>
+					<a href="http://www.weather.com.cn/zt/">专题</a>
+					<a href="http://www.weather.com.cn/photo/gqt/">图片</a>
+					<a href="http://www1.weather.com.cn/video/">视频</a>
+					<a href="http://www.weather.com.cn/space/">空间天气</a>
+					<a href="http://www.weather.com.cn/climate/">气候变化</a>
+					<a href="http://club.weather.com.cn/">社区</a>
+					<a href="http://www.weather.com.cn/wzfw/weixin.shtml">微信</a>
+					<a href="http://baike.weather.com.cn/">百科</a>
+					<a href="http://www.weather.com.cn/wjdc/">调查</a>
+					<a href="http://3g.weather.com.cn/">中国天气通</a>
+					<a href="http://cj.weather.com.cn/">插件</a>
+					<a href="http://mobile.weather.com.cn/">Mobile</a>
+					<a href="http://smart.weather.com.cn/">智慧气象</a>
+			    </div>
+			    <div class="explain">
+			    	<h2 class="expTitle">
+			        	微博墙说明：
+			        </h2>
+			        <p class="expCon">
+			        	微博墙是一个微博的集聚地，在这里您可以方便快速的看到最新最热的微博话题。
+			        </p>
+			        <h2 class="hintTitle">
+			        	温馨提示
+			        </h2>
+			        <p class="hintCon">
+			        	微博栏目是可以拖拽的哦，可以把微博栏拖到您想放的位置，以后它就一直在那里了，快试试吧。
+			        </p>
+			    </div>
+			</li>
+		</ul>
+        <ul class="BlogFather conCenter"></ul>
+        <ul class="BlogFather conRight"></ul>
+    </div>
+</div>
+<script type="text/weibo">
+
+
+ 	<li class="borderBg" data-index=26>
+		<h1 class="blogName">
+		    <img src="http://tp4.sinaimg.cn/2189375415/180/40004474514/1" title="广西气象" alt="广西气象" />
+		    <span>广西气象</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>【阴雨当家气温低 注意保暖啦】早！今天白天到晚上，百色、河池、桂林、柳州、来宾、崇左、南宁、防城港、钦州、北海、贵港等市大部有小雨，我区其它地区阴天局部有小雨。南宁市：小雨，15-21℃。拨打400-6000-121气象服务热线及时反馈您对气象服务的意见、建议以及合作等信息。<a title="http://gx.weather.com.cn/" href="http://t.cn/aWNemz" target="_blank" mt="url" action-type="feed_list_url">http://t.cn/aWNemz</a>                        
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 08:26:41</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>【早上喝牛奶还是喝豆浆好？】还在纠结？豆浆，富含铁、维生素B1、泛酸、纤维素、磷，含蛋白质、钙较低，营养价值低于牛奶的。牛奶，蛋白质、 矿物质和维生素，钙、维生素B12等含量高，缺乏维生素C、铁和纤维质的， 同时含胆固醇和饱和脂肪酸的。两者各有优势，调换来喝。肥胖的人群和高血糖宜喝豆浆。                        
+		        </p>
+		        	
+		        
+		        <i>2013-11-19 21:33:52</i>
+		    </li>
+			
+			<li >
+		        <p>【广西转阴天雨天 冷意渐浓需加衣】今晚到明天，百色、河池、桂林、柳州、来宾、崇左、南宁、贵港等市大部有小雨，我区其它地区阴天局部有小雨。南宁市：阴转小雨15-19℃。拨打400-6000-121气象服务热线及时反馈您对气象服务的意见、建议以及合作等信息。<a title="http://gx.weather.com.cn/weather.shtml" href="http://t.cn/z0djFS3" target="_blank" mt="url" action-type="feed_list_url">http://t.cn/z0djFS3</a>                        
+		        </p>
+		        	
+		        
+		        <i>2013-11-19 17:22:11</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=5>
+		<h1 class="blogName">
+		    <img src="http://tp4.sinaimg.cn/2611704935/180/5624772416/1" title="气象北京" alt="气象北京" />
+		    <span>气象北京</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>【亲，你怎么看？】有人说“天气预报，胡说八道”，也有人说天气预报是“人前关云长，事后诸葛亮”。气象万千，风云莫测，我们一直在努力，就是不知道你老人家满意不满意？亲，点开连接，<a title="http://www.sojump.com/jq/2832476.aspx" href="http://t.cn/zR0AaqI" target="_blank" mt="url" action-type="feed_list_url">http://t.cn/zR0AaqI</a> ，告诉我们，天气预报与服务，你怎么看？
+		        </p>
+		        	
+		        
+		        <i>2013-11-05 09:16:45</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>11月20日17时发布今天夜间到明天白天北京地区空气污染气象条件预报
+		        </p>
+		        
+		        	<a class="img" href="http://ww3.sinaimg.cn/large/9bab7467jw1earlgk4jtvj20c80vdwhc.jpg" target="_blank"><img src="http://ww3.sinaimg.cn/thumbnail/9bab7467jw1earlgk4jtvj20c80vdwhc.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 17:04:40</i>
+		    </li>
+			
+			<li >
+		        <p>【晴朗和煦 补水保湿】很平静的一天，让平时忙碌的小编也悠闲了一把，阳光下多了些温暖，少了点风吹。午后城区最高气温在11~12℃，最小相对湿度20%左右，看来补水保湿要唱主旋律了。今夜晴间多云，最低气温-2℃；明天白天晴间多云，最高气温11℃。风姑娘走了，明天会是一张什么颜色的污染预报图呢？
+		        </p>
+		        
+		        	<a class="img" href="http://ww4.sinaimg.cn/large/9bab7467jw1earl7awn38j209509qjrw.jpg" target="_blank"><img src="http://ww4.sinaimg.cn/thumbnail/9bab7467jw1earl7awn38j209509qjrw.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 16:55:42</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=4>
+		<h1 class="blogName">
+		    <img src="http://tp2.sinaimg.cn/2107648317/180/5598842026/1" title="中国兴农网" alt="中国兴农网" />
+		    <span>中国兴农网</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>【无公害柳编迎出口旺季】在“中国杞柳之乡”---山东省郯城县李庄镇，新记工艺品厂员工在收集柳编制品准备装车发往荷兰。受秋季广交会的影响，进入11月，外发订单出口量开始加大，当地23家具有自营出口权企业纷纷招募人员，扩大定向收购网点，提高上货量。 <a title="http://nyqx.xn121.com/nqxw/gdt/1681767.shtml" href="http://t.cn/8k72TTm" target="_blank" mt="url" action-type="feed_list_url">http://t.cn/8k72TTm</a>
+		        </p>
+		        
+		        	<a class="img" href="http://ww3.sinaimg.cn/large/7da0293djw1earas1pn7aj20dd08xmys.jpg" target="_blank"><img src="http://ww3.sinaimg.cn/thumbnail/7da0293djw1earas1pn7aj20dd08xmys.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 10:55:05</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>【粉垄技术获国家专利】粉垄农耕技术是一种深旋耕技术，可使土壤深松不乱土层，松土量和氧气含量大幅增加，使作物根系增长增多15%以上，光合效率提高10%以上，生长后劲足，肥料施用量可减少10%，产量增加10%—30%。据悉，粉垄农耕技术已在9省的10多种作物所应用。 <a title="http://nykj.xn121.com/kjdt/tp/1681752.shtml" href="http://t.cn/8k7wNAF" target="_blank" mt="url" action-type="feed_list_url">http://t.cn/8k7wNAF</a>
+		        </p>
+		        
+		        	<a class="img" href="http://ww4.sinaimg.cn/large/7da0293djw1ear9rtemy2j208a065dgn.jpg" target="_blank"><img src="http://ww4.sinaimg.cn/thumbnail/7da0293djw1ear9rtemy2j208a065dgn.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 10:20:17</i>
+		    </li>
+			
+			<li >
+		        <p><img src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/d8/good_org.gif" title="[good]" alt="[good]" type="face" />气象知识——纯雪量预报
+		        </p>
+		        
+		        	<a class="img" href="http://ww2.sinaimg.cn/large/62f9ab03jw1ear9e3f72uj20ci08lt96.jpg" target="_blank"><img src="http://ww2.sinaimg.cn/thumbnail/62f9ab03jw1ear9e3f72uj20ci08lt96.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 10:16:50</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=14>
+		<h1 class="blogName">
+		    <img src="http://tp2.sinaimg.cn/2170749461/180/22843272497/1" title="河北天气" alt="河北天气" />
+		    <span>河北天气</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>【明后两天晴间多云为主 中南部雾霾逐渐增多】20日-22日天气以晴间多云为主，气温仍然缓慢回升，天气形势比较稳定，风速也不会太大，中南部雾霾天气会逐渐增多，需提前防范。不过到了23-24日，受到冷空气影响，我省将会出现一次降水、降温天气过程，请大家关注天气变化，及时增添衣物。
+		        </p>
+		        
+		        	<a class="img" href="http://ww1.sinaimg.cn/large/81630215tw1earlhb4dhkj20dw099gm6.jpg" target="_blank"><img src="http://ww1.sinaimg.cn/thumbnail/81630215tw1earlhb4dhkj20dw099gm6.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 17:05:24</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>【主妇手 避寒凉、避劳损】1洗衣服洗菜时尽量用温水。2出门购物时，拿两个购物袋，把物品平均分配到两个袋子再拿。3做家务时戴胶皮手套，冬天出门戴手套。4已患腱鞘炎，尽量避免抓握、拧衣服、碰凉水等，每晚还可以用红花、花椒煮水泡手20分钟，擦干后按摩患侧，并牵引患处。转一下回家告诉妈妈吧~
+		        </p>
+		        
+		        	<a class="img" href="http://ww1.sinaimg.cn/large/81630215tw1earl7f38okj20c808674q.jpg" target="_blank"><img src="http://ww1.sinaimg.cn/thumbnail/81630215tw1earl7f38okj20c808674q.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 16:56:02</i>
+		    </li>
+			
+			<li >
+		        <p>最近虽然每天都是晴朗的天气，但是气温还是渐渐降下来了，小编送上几种围围巾的方法，大家要注意保暖哦‬(・ω・) via秋田六千
+		        </p>
+		        
+		        	<a class="img" href="http://ww1.sinaimg.cn/large/81630215tw1earjrl9wk4j20c80i3di0.jpg" target="_blank"><img src="http://ww1.sinaimg.cn/thumbnail/81630215tw1earjrl9wk4j20c80i3di0.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 16:06:02</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=28>
+		<h1 class="blogName">
+		    <img src="http://tp3.sinaimg.cn/2240099322/180/5606295132/1" title="江淮气象" alt="江淮气象" />
+		    <span>江淮气象</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>【双十一的货还得送一周 异地快件最多晚3天】“双十一”网购的蝴蝶效应还在显现。记者调查发现，多家快递公司工作人员都加入到投递大战，不过有的公司的投递高峰已接近尾声，有的公司还处于应接不暇的状态。一线快递员透露，估计这轮高峰至少还需要持续一周，当前投递异地快件比平时要晚一到三天。
+		        </p>
+		        
+		        	<a class="img" href="http://ww1.sinaimg.cn/large/858533fajw1earl6899vej20dw0c1q3d.jpg" target="_blank"><img src="http://ww1.sinaimg.cn/thumbnail/858533fajw1earl6899vej20dw0c1q3d.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 16:54:41</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>【怎样喝酒才不伤肝】1白酒黄酒温着喝，果盘西瓜必须吃；2选择低度酒；3饮用过程中多喝水.倘若喝得不舒服了，甚至醉酒了，可以喝点蜂蜜水、果汁、番茄汁或芹菜汁，或吃点新鲜葡萄。将酒吐出去的方法也可行。
+		        </p>
+		        
+		        	<a class="img" href="http://ww3.sinaimg.cn/large/858533fajw1earkb3co0yj208p06raaf.jpg" target="_blank"><img src="http://ww3.sinaimg.cn/thumbnail/858533fajw1earkb3co0yj208p06raaf.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 16:24:46</i>
+		    </li>
+			
+			<li >
+		        <p>【天气预报】安徽省气象台2013年11月20日16时发布全省天气预报：今天夜里到明天白天：淮北晴天到多云，淮河以南晴天转多云。全省偏东风2-3级。明晨最低气温：淮北和本省山区3－5℃；其他地区6－8℃。明天最高气温：淮北15－17℃；江淮之间17－19℃；沿江江南19－21℃。
+		        </p>
+		        
+		        	<a class="img" href="http://ww4.sinaimg.cn/large/858533fajw1earjgaojgfj20bs06fjrw.jpg" target="_blank"><img src="http://ww4.sinaimg.cn/thumbnail/858533fajw1earjgaojgfj20bs06fjrw.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 15:55:10</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=11>
+		<h1 class="blogName">
+		    <img src="http://tp2.sinaimg.cn/2640874801/180/5625623199/1" title="黑龙江省气象服务中心" alt="黑龙江省气象服务中心" />
+		    <span>黑龙江省气象服务中心</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>【历史上有记载的暴风雪】原联邦德国的一次大雪连续下了80小时，有一个州的积雪深达3米，停车场上的汽车被积雪掩埋，公路上的汽车根本无法开动；英国普利茅斯港的积雪厚达7米，同外界交通完全隔绝；瑞典斯德哥尔摩的暴雪导致郊外狼群跑到附近的居民区躲避；新疆塔城盆地2009年大雪持续九天积雪高达8米
+		        </p>
+		        
+		        	<a class="img" href="http://ww3.sinaimg.cn/large/9d688d31tw1eares1wbmbj20i20ax0vd.jpg" target="_blank"><img src="http://ww3.sinaimg.cn/thumbnail/9d688d31tw1eares1wbmbj20i20ax0vd.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 13:13:34</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>今夜最低气温：大兴安岭北部-(20-22)℃，大兴安岭南部、黑河、伊春北部、齐齐哈尔-(11-13)℃，伊春南部、绥化、大庆、佳木斯-(8-10)℃，其它地区-(5-7)℃。明天白天最高气温：大兴安岭北部-(3-5)℃ ，大兴安岭南部、黑河、伊春、绥化、大庆、哈尔滨-(1-3)℃，其它地区(0-2)℃。
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 12:08:51</i>
+		    </li>
+			
+			<li >
+		        <p>今天下午:伊春、哈尔滨、鹤岗、佳木斯、双鸭山、七台河、鸡西、牡丹江阴有小雪，其它地区多云。今天夜间到明天白天:佳木斯东部、双鸭山、鸡西多云有阵雪，其它地区晴有时多云。明天夜间到后天白天:大兴安岭北部、黑河北部、伊春北部多云有阵雪，其它地区晴有时多云。
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 11:47:52</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=19>
+		<h1 class="blogName">
+		    <img src="http://tp1.sinaimg.cn/2164230524/180/5604819088/1" title="四川气象" alt="四川气象" />
+		    <span>四川气象</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>【四川省气象台11月20日16时发布空气污染气象条件预报】11月20日20时到21日20时：川西高原及攀西地区空气污染气象条件非常有利于空气污染物稀释、扩散和清除，盆地大部地方的空气污染气象条件较有利于空气污染物稀释、扩散和清除。
+		        </p>
+		        
+		        	<a class="img" href="http://ww2.sinaimg.cn/large/80ff897cgw1earl7amzxzj20gq0cx0tv.jpg" target="_blank"><img src="http://ww2.sinaimg.cn/thumbnail/80ff897cgw1earl7amzxzj20gq0cx0tv.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 16:55:42</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>【24小时天气预报】<img src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/1b/m_org.gif" title="[话筒]" alt="[话筒]" type="face" /> 今天晚上到21日白天：盆地中部、东北部多云，早上有雾，盆地其余地方阴天间多云，其中西部沿山有零星小雨；川西高原晴间多云，攀西地区多云。24小时内，盆地最低气温：北部8-10℃，南部11-13℃；最高气温16-18℃。<img src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/02/lxhzhuanfa_org.gif" title="[转发]" alt="[转发]" type="face" />
+		        </p>
+		        
+		        	<a class="img" href="http://ww1.sinaimg.cn/large/80ff897cgw1earl5bdscfj20fh0e2ab0.jpg" target="_blank"><img src="http://ww1.sinaimg.cn/thumbnail/80ff897cgw1earl5bdscfj20fh0e2ab0.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 16:53:49</i>
+		    </li>
+			
+			<li >
+		        <p>【16时气温实况】人的本能，总是追逐离开我们的东西，同时却逃避追逐我们的东西。
+		        </p>
+		        
+		        	<a class="img" href="http://ww2.sinaimg.cn/large/80ff897cgw1earl3nwtmtj20c80lo76u.jpg" target="_blank"><img src="http://ww2.sinaimg.cn/thumbnail/80ff897cgw1earl3nwtmtj20c80lo76u.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 16:52:15</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=18>
+		<h1 class="blogName">
+		    <img src="http://tp1.sinaimg.cn/2233270392/180/40021816566/1" title="江苏气象" alt="江苏气象" />
+		    <span>江苏气象</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>全省今天夜里到明天晴转多云 <a title="http://t.cn/8k7a0R2" href="http://t.cn/8k7a0R2" target="_blank" action-data="title=PWCP_AJS_WJTV_STVS_EME_AJS_LNO_P9_20131120120000&amp;short_url=http://t.cn/8k7a0R2&amp;full_url=http%3A%2F%2Fvideo.sina.com.cn%2Fv%2Fb%2F119818073-2233270392.html&amp;metadata" action-type="feed_list_media_video">http://t.cn/8k7a0R2<span class="feedico_vedio" title="视频"></span></a>
+		        </p>
+		        
+		        	<a class="img" href="http://ww1.sinaimg.cn/large/851d0078jw1earkkb0brzj203102i3yb.jpg" target="_blank"><img src="http://ww1.sinaimg.cn/thumbnail/851d0078jw1earkkb0brzj203102i3yb.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 16:33:35</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p><a class="a_topic" href="http://huati.weibo.com/k/%E4%B8%8B%E7%8F%AD%E5%A4%A9%E6%B0%94?from=510">#下班天气#</a>【16时实况温度】今天17时全省各市实况温度如下：南京17.4℃，徐州13.4℃，连云港11.0℃，宿迁13.4℃，淮安13.6℃，盐城12.9℃，扬州16.9℃，泰州15.1℃，镇江16.6℃，常州17.4℃，无锡17.4℃，苏州16.9℃，南通15.3℃。
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 16:30:14</i>
+		    </li>
+			
+			<li >
+		        <p><a class="a_topic" href="http://huati.weibo.com/k/%E5%85%A8%E7%9C%81%E5%A4%A9%E6%B0%94?from=510">#全省天气#</a>【天气持续晴好】全省今天夜里到明天晴转多云，全省东南风3-4级，明晨最低温度：江淮之间北部和淮北地区3到4℃，其它地区6℃左右，明天最高温度：淮北地区14到15℃，苏南地区18到19℃，其它地区17℃左右。具体城市预报如下：
+		        </p>
+		        
+		        	<a class="img" href="http://ww2.sinaimg.cn/large/851d0078gw1earkecb4s6j20c80cx75v.jpg" target="_blank"><img src="http://ww2.sinaimg.cn/thumbnail/851d0078gw1earkecb4s6j20c80cx75v.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 16:27:53</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=30>
+		<h1 class="blogName">
+		    <img src="http://tp4.sinaimg.cn/2358203003/180/40021833226/1" title="天津天气" alt="天津天气" />
+		    <span>天津天气</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>【空气污染气象条件预报】
+		        </p>
+		        
+		        	<a class="img" href="http://ww3.sinaimg.cn/large/8c8f527bjw1earl2h5kbxj20mz0whq57.jpg" target="_blank"><img src="http://ww3.sinaimg.cn/thumbnail/8c8f527bjw1earl2h5kbxj20mz0whq57.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 16:51:03</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>【秋冬暖腿妙招4】拍腿。弯腰或是坐着让双腿下垂，用双手同时轻轻拍打双腿，由上至下反复拍打数遍，再用双手握拳置于双大腿和腿肚处，旋转揉动数十次。
+		        </p>
+		        
+		        	<a class="img" href="http://ww3.sinaimg.cn/large/8c8f527btw1ear9sl360sj20ji0e1gna.jpg" target="_blank"><img src="http://ww3.sinaimg.cn/thumbnail/8c8f527btw1ear9sl360sj20ji0e1gna.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 10:21:36</i>
+		    </li>
+			
+			<li >
+		        <p>【历史上的今天】1920年世界第一个无线电广播电台（诞生于米国<img src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/d3/clock_org.gif" title="[钟]" alt="[钟]" type="face" />）；1992年布达拉宫维修三期工程完成（这辈子一定要去一次<img src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/40/hearta_org.gif" title="[心]" alt="[心]" type="face" />）；1999年我国载人航天工程首次飞行试验成功<img src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/70/vw_org.gif" title="[威武]" alt="[威武]" type="face" />；历史上的今天极端最低温度出现在1962年-4.8度。更多历史上的今天天气信息请拨打12121收听
+		        </p>
+		        
+		        	<a class="img" href="http://ww1.sinaimg.cn/large/8c8f527btw1ear9qctqw6j20c80hyjsy.jpg" target="_blank"><img src="http://ww1.sinaimg.cn/thumbnail/8c8f527btw1ear9qctqw6j20c80hyjsy.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 10:18:54</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=17>
+		<h1 class="blogName">
+		    <img src="http://tp2.sinaimg.cn/2131589253/180/5603782977/0" title="甘肃气象" alt="甘肃气象" />
+		    <span>甘肃气象</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p><a class="a_topic" href="http://huati.weibo.com/k/%E7%94%98%E8%82%83%E7%9C%81%E7%9F%AD%E6%9C%9F%E5%A4%A9%E6%B0%94%E9%A2%84%E6%8A%A5?from=510">#甘肃省短期天气预报#</a> 11月20日17时发布：今天夜间到明天白天，全省各地晴间多云。 明天夜间到后天白天，陇南、天水、平凉等市晴转阴有小雨（雪）；酒泉、嘉峪关、临夏、兰州、定西等市晴转多云，部分地方阴有小雨（雪）；省内其余地方晴转多云。另外，酒泉、嘉峪关两市有5-6级西北风。
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 16:56:37</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p><a class="a_topic" href="http://huati.weibo.com/k/%E7%94%98%E8%82%83%E7%9C%81%E7%9F%AD%E6%9C%9F%E5%A4%A9%E6%B0%94%E9%A2%84%E6%8A%A5?from=510">#甘肃省短期天气预报#</a> 11月19日11时发布：今明两天，甘肃各地天气晴朗，不过今天河西有4-6级西北风，气温也会小幅下降。
+		        </p>
+		        	
+		        
+		        <i>2013-11-19 11:00:48</i>
+		    </li>
+			
+			<li >
+		        <p>：<a class="a_topic" href="http://huati.weibo.com/k/%E7%94%98%E8%82%83%E7%9C%81%E7%9F%AD%E6%9C%9F%E5%A4%A9%E6%B0%94%E9%A2%84%E6%8A%A5?from=510">#甘肃省短期天气预报#</a> 11月18日17时发布：今天夜间到明天白天，全省各地晴或多云，其中河西五市有4-6级西北风。 明天夜间到后天白天，全省各地晴间多云。 20日夜间到21日白天，陇南、天水、平凉三市晴转多云，省内其余地方晴间多云。
+		        </p>
+		        	
+		        
+		        <i>2013-11-18 16:38:02</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=31>
+		<h1 class="blogName">
+		    <img src="http://tp2.sinaimg.cn/1525568217/180/5603277306/0" title="山东省气象台" alt="山东省气象台" />
+		    <span>山东省气象台</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>转发微博
+		        </p>
+		        	
+		        
+		        <i>2013-01-08 16:18:29</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>转发微博
+		        </p>
+		        	
+		        
+		        <i>2013-01-08 16:18:22</i>
+		    </li>
+			
+			<li >
+		        <p>转发微博
+		        </p>
+		        	
+		        
+		        <i>2013-01-08 16:18:19</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=29>
+		<h1 class="blogName">
+		    <img src="http://tp1.sinaimg.cn/2049013040/180/5668497550/0" title="青海气象" alt="青海气象" />
+		    <span>青海气象</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p><a class="a_topic" href="http://huati.weibo.com/k/%E5%85%A8%E7%9C%81%E4%B8%BB%E8%A6%81%E5%9F%8E%E9%95%87%E9%A2%84%E6%8A%A5?from=510">#全省主要城镇预报#</a>明天我省各地均为晴天，具体预报：西宁多云转晴,气温零下9到9度，平安晴,气温零下6到11度，西海晴,气温零下16到4度，恰卜恰晴,气温零下11到7度，隆务晴,气温零下6到10度，德令哈晴,气温零下9到6度，格尔木晴,气温零下9到6度，大武多云,气温零下16到4度，结古多云,气温零下11到5度。
+		        </p>
+		        
+		        	<a class="img" href="http://ww4.sinaimg.cn/large/7a217530jw1earl8spipej20dw091jrt.jpg" target="_blank"><img src="http://ww4.sinaimg.cn/thumbnail/7a217530jw1earl8spipej20dw091jrt.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 16:57:13</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p><a class="a_topic" href="http://huati.weibo.com/k/%E5%85%A8%E7%9C%81%E6%9C%AA%E6%9D%A5%E4%B8%89%E5%A4%A9%E5%A4%A9%E6%B0%94%E8%B6%8B%E5%8A%BF?from=510">#全省未来三天天气趋势#</a>20日夜间到21日白天全省各地晴或多云。21日夜间到22日白天全省各地多云或阴。22日夜间到23日白天海西西部、果洛南部多云，省内其余地区有小雪。果洛、青海湖有5到6级西风。
+		        </p>
+		        
+		        	<a class="img" href="http://ww3.sinaimg.cn/large/7a217530jw1earl2r8fgaj21kw16hh8e.jpg" target="_blank"><img src="http://ww3.sinaimg.cn/thumbnail/7a217530jw1earl2r8fgaj21kw16hh8e.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 16:51:25</i>
+		    </li>
+			
+			<li >
+		        <p><a class="a_topic" href="http://huati.weibo.com/k/%E8%A5%BF%E5%AE%81%E6%9C%AA%E6%9D%A5%E4%B8%89%E5%A4%A9%E9%A2%84%E6%8A%A5?from=510">#西宁未来三天预报#</a>22日开始，西宁将结束连续多日的晴朗天气，迎来一次天气过程，具体预报：22日多云转阴,气温零下9到5度,23日小雪,气温零下8到0度,24日晴,气温零下13到7度.
+		        </p>
+		        
+		        	<a class="img" href="http://ww1.sinaimg.cn/large/7a217530jw1earl1w0f2dj20p00cidgn.jpg" target="_blank"><img src="http://ww1.sinaimg.cn/thumbnail/7a217530jw1earl1w0f2dj20p00cidgn.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 16:50:32</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=32>
+		<h1 class="blogName">
+		    <img src="http://tp3.sinaimg.cn/2513683302/180/40022166372/1" title="陕西气象" alt="陕西气象" />
+		    <span>陕西气象</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>您平时关注天气么？您有丰富的气象知识么？陕西省“气象影视杯”气象标准化知识竞赛开始喽~答问题、学知识、赢奖品，想来挑战一下的，请猛戳<img src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/6a/laugh.gif" title="[哈哈]" alt="[哈哈]" type="face" /> <a title="http://www.sxmb.gov.cn/kaoshi/i.html" href="http://t.cn/zR0XuD8" target="_blank" mt="url" action-type="feed_list_url">http://t.cn/zR0XuD8</a>
+		        </p>
+		        
+		        	<a class="img" href="http://ww2.sinaimg.cn/large/95d3c366jw1eaa6sr84usj20qx0kzagt.jpg" target="_blank"><img src="http://ww2.sinaimg.cn/thumbnail/95d3c366jw1eaa6sr84usj20qx0kzagt.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-05 15:43:43</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>【维生素宜在饭后服】维生素类药物主要经小肠吸收,如饭前空腹时服用,容易使血中维生素浓度很快增高,在被身体组织利用之前,就会从尿中排出去。饭后服用维生素类,由于肠道有食物,维生素会被逐渐吸收,有利于其发挥治疗作用。尤其是脂溶性维生素A、维生素D、维生素E,更应饭后服用。
+		        </p>
+		        
+		        	<a class="img" href="http://ww3.sinaimg.cn/large/95d3c366jw1eari3eyzwsj206905k0t4.jpg" target="_blank"><img src="http://ww3.sinaimg.cn/thumbnail/95d3c366jw1eari3eyzwsj206905k0t4.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 15:08:11</i>
+		    </li>
+			
+			<li >
+		        <p><a class="a_topic" href="http://huati.weibo.com/k/%E6%B0%94%E8%B1%A1%E9%A2%84%E8%AD%A6?from=510">#气象预警#</a>陕西省气象台2013年11月20日09时30分发布霾黄色预警信号：预计未来24小时内宝鸡、咸阳、西安、渭南的部分地区将出现中度霾天气，易形成中度空气污染。驾驶人员小心驾驶；因空气质量明显降低，人员需适当防护；呼吸道疾病患者尽量减少外出，外出时可带口罩。<a href="http://weibo.com/n/%E9%99%95%E8%A5%BF%E5%8F%91%E5%B8%83" usercard="name=陕西发布">@陕西发布</a>
+		        </p>
+		        
+		        	<a class="img" href="http://ww1.sinaimg.cn/large/95d3c366jw1ear99d6r5fj208c072jrc.jpg" target="_blank"><img src="http://ww1.sinaimg.cn/thumbnail/95d3c366jw1ear99d6r5fj208c072jrc.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 10:02:29</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=16>
+		<h1 class="blogName">
+		    <img src="http://tp3.sinaimg.cn/2173096294/180/5603251680/1" title="湖南省天气" alt="湖南省天气" />
+		    <span>湖南省天气</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>第一时间、传递关爱，第一时间、直击现场，第一时间、权威发布。中国气象频道以防灾减灾、服务大众为宗旨，全天24小时滚动播出天气预报、天气新闻、经济气象、生活气象、气象科普类等节目，每半小时滚动播出一次湖南本地天气资讯节目。湖南有线电视频道号121，气象频道与您一起相伴四季风云。
+		        </p>
+		        
+		        	<a class="img" href="http://ww2.sinaimg.cn/large/8186d166jw1eariqxiza0j20k00g0whq.jpg" target="_blank"><img src="http://ww2.sinaimg.cn/thumbnail/8186d166jw1eariqxiza0j20k00g0whq.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 15:30:45</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p><a class="a_topic" href="http://huati.weibo.com/k/%E5%A4%A9%E6%B0%94%E5%BE%AE%E4%B8%BB%E6%92%AD%E2%80%A2%E7%9A%8E%E9%9B%AA?from=510">#天气微主播•皎雪#</a>告诉您：【秋冬润肤有妙招 茶水洗脸防皱纹】秋冬季节，皮肤因缺水干燥导致皱纹，让女人抓狂不已。想要皮肤水当当，有一种天然有效的好方法，用茶叶水洗脸。将喝剩的茶叶泡水用来洗脸，或用纸膜浸湿敷面，但时间不宜过长。这样，面部不仅光亮、皱纹减少，而且还可预防多种皮肤病。
+		        </p>
+		        
+		        	<a class="img" href="http://ww2.sinaimg.cn/large/8186d166jw1eari5041v4j20dc09sdgq.jpg" target="_blank"><img src="http://ww2.sinaimg.cn/thumbnail/8186d166jw1eari5041v4j20dc09sdgq.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 15:09:42</i>
+		    </li>
+			
+			<li >
+		        <p><a class="a_topic" href="http://huati.weibo.com/k/%E5%A4%A9%E6%B0%94%E5%BE%AE%E4%B8%BB%E6%92%AD%E2%80%A2%E7%9A%8E%E9%9B%AA?from=510">#天气微主播•皎雪#</a>告诉您：【阳光落户湖南 23日晚雨水来袭气温降】最近，和煦的阳光落户三湘，使深秋的景致显得明媚有活力。湖南省气象台预计，23日晚冷空气来袭前，全省以晴天见多云天气为主，湘西有弱降水，气温变化不大，相关部门和市民注意防范早晨部分地区晨雾出没。<a title="http://www.hnqx.gov.cn/news/2/2013-11-20/YangGuangLaHuHuNa-23-RiWanYuShuiLaiXiQiWenJiang.htm" href="http://t.cn/8k72Jar" target="_blank" mt="url" action-type="feed_list_url">http://t.cn/8k72Jar</a>
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 10:50:08</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=2>
+		<h1 class="blogName">
+		    <img src="http://tp1.sinaimg.cn/1400737000/180/5662341037/0" title="中国天气网生活" alt="中国天气网生活" />
+		    <span>中国天气网生活</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>毛衣最爱藏螨虫！冬季毛衣很少清洗，然而其实毛衣很容易沾染螨虫和各种细菌。既是穿里面的毛衣，也最好每半月洗一次。（转）
+		        </p>
+		        
+		        	<a class="img" href="http://ww2.sinaimg.cn/large/537d8ce8jw1earld9r0oqj20c80fc3zl.jpg" target="_blank"><img src="http://ww2.sinaimg.cn/thumbnail/537d8ce8jw1earld9r0oqj20c80fc3zl.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 17:01:27</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>【秋冬风寒感冒可喝紫苏粥】干紫苏叶6克，大米50克，红糖适量。大米淘洗干净。砂锅内加适量水，放入紫苏叶，煮沸1分钟，去渣取汁备用。锅内加水烧开，加入大米；粥熟时，再加入紫苏叶汁和红糖，搅匀即成。此粥适用于风寒性感冒、咳嗽等冬季常见疾病。（转）
+		        </p>
+		        
+		        	<a class="img" href="http://ww4.sinaimg.cn/large/537d8ce8jw1earjmm4zkmj20co09igow.jpg" target="_blank"><img src="http://ww4.sinaimg.cn/thumbnail/537d8ce8jw1earjmm4zkmj20co09igow.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 16:01:15</i>
+		    </li>
+			
+			<li >
+		        <p>【秋冬室内适合种什么花】秋冬季室内开窗换气频率大大降低，空气不流通容易造成二氧化碳、 二氧化硫等有害气体的增加，因此室内适合种植能够：1)吸收有害物质，如百合、石榴、吊兰。2)防病杀菌，如紫罗兰、文竹、柏木、柑橘、吊兰。3)清洁室内空气，如月季、茉莉、仙人掌。（转）
+		        </p>
+		        
+		        	<a class="img" href="http://ww2.sinaimg.cn/large/537d8ce8jw1earhwk0jirj20dq0cm3z0.jpg" target="_blank"><img src="http://ww2.sinaimg.cn/thumbnail/537d8ce8jw1earhwk0jirj20dq0cm3z0.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 15:01:35</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=1>
+		<h1 class="blogName">
+		    <img src="http://tp3.sinaimg.cn/2319195074/180/5611645289/1" title="中国天气通" alt="中国天气通" />
+		    <span>中国天气通</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>连续3天强降雪过后 东北局地积雪深度超60cm
+		        </p>
+		        
+		        	<a class="img" href="http://ww3.sinaimg.cn/large/67b428d1jw1earhq1nf3cj20br09jmxn.jpg" target="_blank"><img src="http://ww3.sinaimg.cn/thumbnail/67b428d1jw1earhq1nf3cj20br09jmxn.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 15:10:07</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>【那些年我们一起堆过的雪人】16日开始，今冬来最强降雪袭击东北。大雪飘落而下，让多个城市银装素裹。更有市民发挥创意堆出了各式各样的雪人，以表达自己的喜悦。小编搜罗了微博上大家晒的各式雪人，总有一款雷到你！<a href="http://weibo.com/n/%E4%B8%AD%E5%9B%BD%E5%A4%A9%E6%B0%94%E7%BD%91" usercard="name=中国天气网">@中国天气网</a> <a title="" href="http://t.cn/8k7zpNG" target="_blank" mt="url" action-type="feed_list_url">http://t.cn/8k7zpNG</a>
+		        </p>
+		        
+		        	<a class="img" href="http://ww3.sinaimg.cn/large/8a3c1bc2jw1ear8tryavsj20a00dct9u.jpg" target="_blank"><img src="http://ww3.sinaimg.cn/thumbnail/8a3c1bc2jw1ear8tryavsj20a00dct9u.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 09:47:47</i>
+		    </li>
+			
+			<li >
+		        <p>【新疆将出现中到大雪天气】11月20～21日，受冷空气影响，新疆北部有小雪或雨夹雪天气，其中，新疆的伊犁河谷、阿勒泰以及沿天山的部分地区有大雪，局地暴雪。新疆北部并伴有4～6级风。公众驾车出行需减速慢行，及时增加衣物防感冒~<a href="http://weibo.com/n/%E4%B8%AD%E5%9B%BD%E5%A4%A9%E6%B0%94%E7%BD%91" usercard="name=中国天气网">@中国天气网</a> <a title="http://www.cma.gov.cn/2011xwzx/2011xqxxw/2011xqxyw/201311/t20131119_231927.html" href="http://t.cn/8khLgx1" target="_blank" mt="url" action-type="feed_list_url">http://t.cn/8khLgx1</a>
+		        </p>
+		        
+		        	<a class="img" href="http://ww2.sinaimg.cn/large/8a3c1bc2jw1eaq54d28gij20i20eljva.jpg" target="_blank"><img src="http://ww2.sinaimg.cn/thumbnail/8a3c1bc2jw1eaq54d28gij20i20eljva.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-19 10:53:49</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=7>
+		<h1 class="blogName">
+		    <img src="http://tp3.sinaimg.cn/1917050314/180/40022187304/1" title="浙江天气" alt="浙江天气" />
+		    <span>浙江天气</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p><a class="a_topic" href="http://huati.weibo.com/k/%E5%A4%A9%E6%B0%94%E5%AE%9E%E5%86%B5?from=510">#天气实况#</a>今（20日）晴好天气持续，白天回暖明显。截至16时，日最高气温全省大部20℃左右，较昨天升高2-3℃。杭州，今天最低5.2℃，最高19.3℃，气温日较差达14.1℃。
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 16:36:51</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p><a class="a_topic" href="http://huati.weibo.com/k/%E6%AF%8F%E6%97%A5%E5%A4%A9%E6%B0%94%E6%8F%90%E7%A4%BA?from=510">#每日天气提示#</a>晴好不打烊，气温渐回暖，杭城今最高气温19.3℃，较昨日升高2.8℃。杭州今夜晴到少云，明天晴转多云，气温8到21℃。
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 16:36:39</i>
+		    </li>
+			
+			<li >
+		        <p><a class="a_topic" href="http://huati.weibo.com/k/%E5%85%A8%E8%BA%AB%E5%A4%A9%E6%B0%94%E9%A2%84%E6%8A%A5?from=510">#全身天气预报#</a>今天傍晚到夜里：全省晴到少云。明天后天：全省晴到多云。明天早晨最低温度：山区3-5℃；浙北和浙西地区6-8℃；其它地区8-10℃。明天白天最高温度：全省20-22℃。
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 16:36:17</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=10>
+		<h1 class="blogName">
+		    <img src="http://tp3.sinaimg.cn/2730752854/180/40021495439/1" title="江西气象微博" alt="江西气象微博" />
+		    <span>江西气象微博</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>【天气晚报】今天晚上到明天赣州、吉安两市阴天多云，局部有小阵雨，全省其他市多云。 风向：偏北 风力：2～3级
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 16:59:48</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>【天气晴好 早晚温差大】今天全省晴天。明后天全省晴天多云。未来天气不错，但早晚温差较大，注意保暖。
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 11:53:10</i>
+		    </li>
+			
+			<li >
+		        <p>【天气早报】今天白天到晚上全省晴天多云，早晨局部有雾，请注意交通安全。风向：偏北。风力：1～2级。今天最高气温:赣北赣中19～20℃，局部21℃；赣南20～22℃，局部23℃。
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 07:06:28</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=0>
+		<h1 class="blogName">
+		    <img src="http://tp4.sinaimg.cn/2678492723/180/5662011808/0" title="旅游天气网" alt="旅游天气网" />
+		    <span>旅游天气网</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>【福州十八重溪】因其水流长度500米以上的溪流有十数条，取名“十八”，形容其多。以奇特的火山岩地貌、典型的季节河、丰富的珍稀动、植物与火山岩形成灵谷幽壑，浑然天成，野趣，横生。十八重溪虽有18重，主要景点却是从第9～13重。游客一般从三、四重溪开始游览。13重溪以下因未开发人迹罕至。
+		        </p>
+		        
+		        	<a class="img" href="http://ww2.sinaimg.cn/large/9fa68e33jw1earkhc51snj20cn06twey.jpg" target="_blank"><img src="http://ww2.sinaimg.cn/thumbnail/9fa68e33jw1earkhc51snj20cn06twey.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 16:30:46</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>【银川滚钟口】曾是李元昊的避暑宫苑，位于银川市西北约30公里的贺兰山东麓，三面环山，形似大钟。有贺兰庙、老君堂、大悲阁、小洞天、兴隆寺、观音庙等14处庵庙台阁。滚钟口风景秀丽，林木葱笼，尤以初春时节景色最美，山花争艳，泉水淙淙，山腰绿荫葱葱，山巅白雪皑皑。
+		        </p>
+		        
+		        	<a class="img" href="http://ww4.sinaimg.cn/large/9fa68e33jw1earjbgxj6vj20aw084mxk.jpg" target="_blank"><img src="http://ww4.sinaimg.cn/thumbnail/9fa68e33jw1earjbgxj6vj20aw084mxk.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 15:50:30</i>
+		    </li>
+			
+			<li >
+		        <p>【通灵大峡谷】通灵大峡谷位于靖西县城东南部32公里的湖润镇新灵村，念八峡、铜灵霞、古劳峡、新灵峡、新桥峡组成。念八河从古龙山脉缓蜒而下，依次穿越五个峡谷，流入湖润台地。每个峡谷内荟萃了举世罕见的特高瀑布群、洞中瀑布、地下暗河、峡谷溪流、洞穴奇观、古石垒、古悬葬、原始植被等自然景观。
+		        </p>
+		        
+		        	<a class="img" href="http://ww3.sinaimg.cn/large/9fa68e33jw1eari5wmu8sj209m05p74j.jpg" target="_blank"><img src="http://ww3.sinaimg.cn/thumbnail/9fa68e33jw1eari5wmu8sj209m05p74j.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 15:10:34</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=3>
+		<h1 class="blogName">
+		    <img src="http://tp2.sinaimg.cn/2625476957/180/5624839564/0" title="中国天气网气候变化频道" alt="中国天气网气候变化频道" />
+		    <span>中国天气网气候变化频道</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>真先进！希望能切实改善垃圾回收利用率 //<a href="http://weibo.com/n/%E4%B8%AD%E5%9B%BD%E5%8F%91%E5%B1%95%E7%AE%80%E6%8A%A5" usercard="name=中国发展简报">@中国发展简报</a>:二维码？！//<a href="http://weibo.com/n/%E5%86%AF%E6%B0%B8%E9%94%8B" usercard="name=冯永锋">@冯永锋</a>:哦，进展飞速啊。<a href="http://weibo.com/n/%E7%AB%8B%E9%9B%AFnu" usercard="name=立雯nu">@立雯nu</a> //<a href="http://weibo.com/n/tqsmile85" usercard="name=tqsmile85">@tqsmile85</a>: //<a href="http://weibo.com/n/ShariseHsu_" usercard="name=ShariseHsu_">@ShariseHsu_</a>:转发微博
+		        </p>
+		        
+		        	<a class="img" href="http://ww3.sinaimg.cn/large/7fe6334agw1eakdw17cfxj208c05smxm.jpg" target="_blank"><img src="http://ww3.sinaimg.cn/thumbnail/7fe6334agw1eakdw17cfxj208c05smxm.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-19 09:19:30</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>也希望<a href="http://weibo.com/n/%E9%A1%BA%E9%A3%8E%E8%BD%A6" usercard="name=顺风车">@顺风车</a> 在中国顺利开展!
+		        </p>
+		        
+		        	<a class="img" href="http://ww2.sinaimg.cn/large/5085d2ccjw1eanvic85hbj218g0u5wi4.jpg" target="_blank"><img src="http://ww2.sinaimg.cn/thumbnail/5085d2ccjw1eanvic85hbj218g0u5wi4.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-19 08:41:27</i>
+		    </li>
+			
+			<li >
+		        <p>中国发声了
+		        </p>
+		        
+		        	<a class="img" href="http://ww1.sinaimg.cn/large/6a5ce645jw1eapzzsqwj5j20q416gdn6.jpg" target="_blank"><img src="http://ww1.sinaimg.cn/thumbnail/6a5ce645jw1eapzzsqwj5j20q416gdn6.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-19 08:40:42</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=9>
+		<h1 class="blogName">
+		    <img src="http://tp2.sinaimg.cn/2506600245/180/5618199390/1" title="吉林气象" alt="吉林气象" />
+		    <span>吉林气象</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>花没采到，被蜜蜂蛰到了！这次没中奖，再玩一次吧！<a href="http://weibo.com/n/%E6%96%B0%E6%96%87%E5%8C%96%E6%8A%A5" usercard="name=新文化报">@新文化报</a>
+		        </p>
+		        
+		        	<a class="img" href="http://ww4.sinaimg.cn/large/a184731bjw1e3zhvgrvrxj20ao2awqcj.jpg" target="_blank"><img src="http://ww4.sinaimg.cn/thumbnail/a184731bjw1e3zhvgrvrxj20ao2awqcj.jpg"/></a>
+		        	
+		        
+		        <i>2013-04-30 05:17:21</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>以后天气预报都由<a href="http://weibo.com/n/%E5%90%89%E6%9E%97%E6%B0%94%E8%B1%A1%E6%9C%8D%E5%8A%A1" usercard="name=吉林气象服务">@吉林气象服务</a> 发布了，谢谢各位亲的支持，<img src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/d4/lxhdeyidixiao_org.gif" title="[得意地笑]" alt="[得意地笑]" type="face" />
+		        </p>
+		        	
+		        
+		        <i>2013-03-23 12:47:38</i>
+		    </li>
+			
+			<li >
+		        <p>吉林省气象台 2013年3月23日05时发布
+		        </p>
+		        
+		        	<a class="img" href="http://ww2.sinaimg.cn/large/9567af35jw1e2z8pm2rn8j.jpg" target="_blank"><img src="http://ww2.sinaimg.cn/thumbnail/9567af35jw1e2z8pm2rn8j.jpg"/></a>
+		        	
+		        
+		        <i>2013-03-23 05:05:22</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=12>
+		<h1 class="blogName">
+		    <img src="http://tp2.sinaimg.cn/2642215773/180/5625630467/1" title="宁夏天气-宁夏气象" alt="宁夏天气-宁夏气象" />
+		    <span>宁夏天气-宁夏气象</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>【塞上风云】预计今天白天到夜间，全区晴间多云，偏北风2~3级，最高气温8~14℃，最低气温-8~-2℃。吃早餐三大原则：1、必须有丰富的品质类型，均衡饮食，营养全面；2、必须有碳水化合物，用以补充足够的能量；3、必须要补充维生素，早晨摄入吸收率最高。如此高标准的原则，你做到了吗？<img src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/a5/cza_org.gif" title="[馋嘴]" alt="[馋嘴]" type="face" />
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 08:34:07</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>【塞上风云】预计今天夜间到明天白天，全区晴间多云，偏北风2~3级，最低气温-9~-2℃，最高气温8~14℃。下午温暖的阳光再加上屋里很给力的暖气，导致小编怀疑自己是否穿得太多<img src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/24/sweata_org.gif" title="[汗]" alt="[汗]" type="face" />在此提醒亲们，在室内注意开窗通风，适时增减衣物，以免因室内外温差大而被感冒袭击<img src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/b6/sb_org.gif" title="[生病]" alt="[生病]" type="face" />
+		        </p>
+		        	
+		        
+		        <i>2013-11-19 17:17:26</i>
+		    </li>
+			
+			<li >
+		        <p><img src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/02/lxhzhuanfa_org.gif" title="[转发]" alt="[转发]" type="face" />
+		        </p>
+		        
+		        	<a class="img" href="http://ww1.sinaimg.cn/large/781c1bd7jw1eaq0uj8thaj20bi09bwfi.jpg" target="_blank"><img src="http://ww1.sinaimg.cn/thumbnail/781c1bd7jw1eaq0uj8thaj20bi09bwfi.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-19 08:26:48</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=8>
+		<h1 class="blogName">
+		    <img src="http://tp3.sinaimg.cn/2735907942/180/5626253102/1" title="内蒙古气象服务" alt="内蒙古气象服务" />
+		    <span>内蒙古气象服务</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>今天夜间: 全区大部以晴为主，阿拉善盟、乌海市3、4级西南风转东南风，锡林郭勒盟东北部、赤峰市、通辽市、兴安盟、呼伦贝尔市4级左右西北风，其余地区3、4级偏西风。
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 16:50:31</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>明天白天:阿拉善盟、呼伦贝尔市北部多云，其中，呼伦贝尔市北部有小雪，其余地区晴间多云，阿拉善盟西部3、4级东南风转西北风，锡林郭勒盟3、4级偏西风，赤峰市、通辽市、兴安盟、呼伦贝尔市4级左右西北风，其余地区3、4级西南风。
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 16:50:12</i>
+		    </li>
+			
+			<li >
+		        <p>明天夜间到后天:阿拉善盟、呼伦贝尔市北部多云，其中，呼伦贝尔市北部有小雪，其余地区晴间多云，阿拉善盟3、4级转4、5级偏西风，锡林郭勒盟北部、赤峰市、通辽市、兴安盟、呼伦贝尔市4级左右西北风，其余地区3、4级偏西风。
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 16:49:49</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=20>
+		<h1 class="blogName">
+		    <img src="http://tp4.sinaimg.cn/2635818911/180/5627813324/1" title="上海市天气" alt="上海市天气" />
+		    <span>上海市天气</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>【上海市空气质量预报】
+		        </p>
+		        
+		        	<a class="img" href="http://ww4.sinaimg.cn/large/9d1b679fgw1earlcmb134j20go0antbp.jpg" target="_blank"><img src="http://ww4.sinaimg.cn/thumbnail/9d1b679fgw1earlcmb134j20go0antbp.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 17:00:51</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>【明日“多云+霾” 气温向上走】天晴点赞，只是霾现申城惹人恼。今天白天，在阳光助推下，全市大部最高气温升至了17-18℃，中心城区徐家汇17.3℃（昨日最高13.9℃）。明天受高空低槽影响，上海云系增多，风向转为东南风，风力3-4级；气温进一步上升，在9-18℃之间；另外，明天白天本市仍有轻度霾。
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 16:52:27</i>
+		    </li>
+			
+			<li >
+		        <p>【秋阳照耀渐回暖 天干燥补水勿忘】阳光洒满申城，气温较昨日回升明显，11时30分大部地区实况气温在15-17℃，中心城区徐家汇15.6℃（昨日同期12.5℃）。预计午后本市继续维持晴到多云的天气，西到西南风微拂，白天局部地区有轻微霾。另外，天气较干燥，建议大家适时补充水分，注意用火用电安全。
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 11:40:35</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=13>
+		<h1 class="blogName">
+		    <img src="http://tp3.sinaimg.cn/2735745062/180/40014214810/1" title="黔气象" alt="黔气象" />
+		    <span>黔气象</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>#贵阳供暖大家说#<img src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/f2/wg_org.gif" title="[围观]" alt="[围观]" type="face" />【贵阳不适合城市集中供暖 更适合小区集中供暖】湿冷的贵阳到底适合集中供暖吗？专家论证指出，贵阳更适合小区集中供暖，您对此怎么看？参与我们的话题#贵阳供暖大家说#，分享您的观点 <a href="http://weibo.com/n/%E9%BB%94%E6%B0%94%E8%B1%A1" usercard="name=黔气象">@黔气象</a>，速来<img src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/f2/wg_org.gif" title="[围观]" alt="[围观]" type="face" />。
+		        </p>
+		        
+		        	<a class="img" href="http://ww1.sinaimg.cn/large/a3102826gw1e9u2k4v3y3j20c82j5qlt.jpg" target="_blank"><img src="http://ww1.sinaimg.cn/thumbnail/a3102826gw1e9u2k4v3y3j20c82j5qlt.jpg"/></a>
+		        	
+		        
+		        <i>2013-10-22 17:07:04</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p><img src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/6a/laugh.gif" title="[哈哈]" alt="[哈哈]" type="face" />伙伴们你敢接下去吗？ //<a href="http://weibo.com/n/%E6%89%AC%E5%B8%86%E8%B5%B7%E8%88%AA-%E5%BE%AE%E7%AC%91" usercard="name=扬帆起航-微笑">@扬帆起航-微笑</a>:鬼子滴末日就要来到鸟，你来接下面一句吧//<a href="http://weibo.com/n/%E6%8E%8C%E4%B8%8A%E8%B4%B5%E5%B7%9E" usercard="name=掌上贵州">@掌上贵州</a>: 一起唱……西边滴太阳昂就要出来鸟~
+		        </p>
+		        
+		        	<a class="img" href="http://ww4.sinaimg.cn/large/a3102826jw1earhb73rn0j208w0a7q3g.jpg" target="_blank"><img src="http://ww4.sinaimg.cn/thumbnail/a3102826jw1earhb73rn0j208w0a7q3g.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 16:57:28</i>
+		    </li>
+			
+			<li >
+		        <p><a class="a_topic" href="http://huati.weibo.com/k/%E7%94%9F%E6%B4%BB%E4%BE%BF%E5%88%A9%E8%B4%B4?from=510">#生活便利贴#</a>【为什么饿了肚子会咕咕叫？】当胃排空以后，就开始收缩，使人产生饥饿感。胃中总存在少量的胃消化液和随食物一起吞咽下去的气体。这些液体和气体在胃壁剧烈收缩时，就会被挤捏揉压，咕咕直叫。另外，肚子空时，加大了回声的作用，咕咕声更大了！（转）
+		        </p>
+		        
+		        	<a class="img" href="http://ww4.sinaimg.cn/large/a3102826jw1eark6w9681j205g06kjrf.jpg" target="_blank"><img src="http://ww4.sinaimg.cn/thumbnail/a3102826jw1eark6w9681j205g06kjrf.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 16:20:43</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=23>
+		<h1 class="blogName">
+		    <img src="http://tp4.sinaimg.cn/2143462671/180/5601441041/1" title="重庆市气象局" alt="重庆市气象局" />
+		    <span>重庆市气象局</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>【赖床5分钟可防头晕】天冷了，你是否成了起床困难户呢？其实吧，早上起床应该在床上多赖上五分钟！因为夜间睡觉时，身体各处系统及关节都属于半睡眠状态，如果马上起床，身体尚未适应工作状态，会出现头晕、心慌，甚至四肢乏力、反应迟钝等现象。（生命时报）记住哟，明天一定要赖床五分钟再起<img src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/19/heia_org.gif" title="[偷笑]" alt="[偷笑]" type="face" />
+		        </p>
+		        
+		        	<a class="img" href="http://ww2.sinaimg.cn/large/7fc2a50fjw1earlc4341ej20c8084dgt.jpg" target="_blank"><img src="http://ww2.sinaimg.cn/thumbnail/7fc2a50fjw1earlc4341ej20c8084dgt.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 17:01:19</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>【明天阴雨掌控全市！主城气温低至13℃】今天夜间到明天白天：间断小雨——沙坪坝、渝中、江北、南岸、九龙坡、大渡口、巴南15-18℃；北碚14-17℃。||零星小雨转间断小雨——渝北13-16℃。（各区县具体预报见附图）
+		        </p>
+		        
+		        	<a class="img" href="http://ww4.sinaimg.cn/large/7fc2a50fjw1earkhgkgxgj20e30xlagz.jpg" target="_blank"><img src="http://ww4.sinaimg.cn/thumbnail/7fc2a50fjw1earkhgkgxgj20e30xlagz.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 16:31:40</i>
+		    </li>
+			
+			<li >
+		        <p>【重庆的冬天到了吗？】这么冷，重庆是否已真正进入冬季了呢？目前全市还没有入冬哟，从常年来看，主城要在12月1日才被请进气象意义上的冬季，而城口常年在11月中旬就会入冬，但今年却延迟了。你期待冬天吗？
+		        </p>
+		        
+		        	<a class="img" href="http://ww4.sinaimg.cn/large/7fc2a50fjw1earj9myusfj20b41c610a.jpg" target="_blank"><img src="http://ww4.sinaimg.cn/thumbnail/7fc2a50fjw1earj9myusfj20b41c610a.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 15:48:46</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=27>
+		<h1 class="blogName">
+		    <img src="http://tp1.sinaimg.cn/2592786632/180/5618640693/1" title="云南气象" alt="云南气象" />
+		    <span>云南气象</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>11月20日20时--11月21日08时：昭通、曲靖东部、文山中部以东、红河南部、西双版纳东部小雨；其它地区多云。 11月21日08时--11月21日20时：昭通、曲靖东部、文山中部以东、红河南部、西双版纳东部小雨；其它地区多云。
+		        </p>
+		        
+		        	<a class="img" href="http://ww4.sinaimg.cn/large/9a8ac8c8gw1earlc4ag23j20so0hbgrm.jpg" target="_blank"><img src="http://ww4.sinaimg.cn/thumbnail/9a8ac8c8gw1earlc4ag23j20so0hbgrm.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 17:00:23</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>《坚果的神奇功效》 杏仁有调节胰岛素与血糖水平的作用，也是糖耐量低减与糖尿病的食疗品之一。杏仁富含的硼与钙质，对预防更年期妇女骨质疏松也有一定益处。常食杏仁的冠心病患者，心绞痛发生的几率要比不食者减少50%。
+		        </p>
+		        
+		        	<a class="img" href="http://ww4.sinaimg.cn/large/9a8ac8c8gw1eari40fdauj20sv0ggjtj.jpg" target="_blank"><img src="http://ww4.sinaimg.cn/thumbnail/9a8ac8c8gw1eari40fdauj20sv0ggjtj.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 15:08:49</i>
+		    </li>
+			
+			<li >
+		        <p>11月20日08时--11月20日20时：曲靖东部、西双版纳中部以东中雨；楚雄中部以北阴；昆明中部以西、楚雄南部、临沧东部、丽江、迪庆、怒江中部以北多云；临沧北部、德宏、保山、大理、怒江南部晴；其它地区小雨。
+		        </p>
+		        
+		        	<a class="img" href="http://ww2.sinaimg.cn/large/9a8ac8c8gw1earb6s49nhj20jo0cb3zv.jpg" target="_blank"><img src="http://ww2.sinaimg.cn/thumbnail/9a8ac8c8gw1earb6s49nhj20jo0cb3zv.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 11:09:16</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=15>
+		<h1 class="blogName">
+		    <img src="http://tp3.sinaimg.cn/2384152914/180/5611387765/0" title="湖北天气" alt="湖北天气" />
+		    <span>湖北天气</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>【武汉市天气预报】今天晚上：晴天到多云。明天白天：晴天到多云，局部有霾。明天最高温度：20℃, 明天最低温度：7℃，湿度：35-90％, 风：偏北风2到3级。气象相关问题解答、效果反馈、投诉建议等请拨打400-6000-121。
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 16:13:33</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>【湖北省天气预报】今天晚上：鄂西南多云；其他地区晴天到多云。明天白天：鄂西南多云，局部有小雨；其他地区晴天到多云，局部有霾。风：偏北风2到3级，明天最高气温：大部地区18-21℃，明天最低气温：北部6-8℃；南部9-11℃，明天日平均气温：大部地区12-15℃。
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 16:13:24</i>
+		    </li>
+			
+			<li >
+		        <p>【武汉市天气预报】今天白天：晴天到多云。今天晚上：晴天到多云。今天最高气温：21℃。湿度：40-95％, 风：偏北风2到3级。气象相关问题解答、效果反馈、投诉建议等请拨打400-6000-121。
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 08:23:33</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=25>
+		<h1 class="blogName">
+		    <img src="http://tp1.sinaimg.cn/2396585524/180/5662595450/1" title="山西省气象局" alt="山西省气象局" />
+		    <span>山西省气象局</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>【2013年11月20日17时发布全省24小时天气预报】20日夜间：全省晴天间多云。 21日白天：全省晴天间多云。 山西省气象局提醒您：关注我省各市县未来7天天气预报！详情请见山西天气网<a title="http://shanxi.weather.com.cn/" href="http://t.cn/StlVAX" target="_blank" mt="url" action-type="feed_list_url">http://t.cn/StlVAX</a>
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 16:42:00</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>【2013年11月20日17时发布我省各地市24小时天气预报】山西省气象局提醒您：关注我省各市县未来7天天气预报，详情请见山西天气网<a title="http://shanxi.weather.com.cn/" href="http://t.cn/StlVAX" target="_blank" mt="url" action-type="feed_list_url">http://t.cn/StlVAX</a>
+		        </p>
+		        
+		        	<a class="img" href="http://ww1.sinaimg.cn/large/8ed8fe34jw1earkraq5zdj20ah06i74x.jpg" target="_blank"><img src="http://ww1.sinaimg.cn/thumbnail/8ed8fe34jw1earkraq5zdj20ah06i74x.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 16:40:21</i>
+		    </li>
+			
+			<li >
+		        <p>【2013年11月20日11时发布我省各地市24小时天气预报】山西省气象局提醒您：关注我省各市县未来7天天气预报，详情请见山西天气网<a title="http://shanxi.weather.com.cn/" href="http://t.cn/StlVAX" target="_blank" mt="url" action-type="feed_list_url">http://t.cn/StlVAX</a>
+		        </p>
+		        
+		        	<a class="img" href="http://ww3.sinaimg.cn/large/8ed8fe34jw1earb1zozbuj20cc075gmn.jpg" target="_blank"><img src="http://ww3.sinaimg.cn/thumbnail/8ed8fe34jw1earb1zozbuj20cc075gmn.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 11:04:39</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=21>
+		<h1 class="blogName">
+		    <img src="http://tp2.sinaimg.cn/2202083193/180/5604191871/1" title="河南气象" alt="河南气象" />
+		    <span>河南气象</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>河南省内风景区预报
+		        </p>
+		        
+		        	<a class="img" href="http://ww2.sinaimg.cn/large/83411f79jw1ear89xi4b6j20e90qljvj.jpg" target="_blank"><img src="http://ww2.sinaimg.cn/thumbnail/83411f79jw1ear89xi4b6j20e90qljvj.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 09:28:26</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>天气预报：11月20日全省今天白天到夜里，南部晴天到多云，其它地区晴天间多云。凌晨到上午我省中部地区有霾。全省偏北风3级左右。最高温度：北部10到12度；南部16到18度；其它地区13到15度。最低温度：西部山区、北部零下2度到0度；南部4到6度；其它地区1到3度。
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 07:05:49</i>
+		    </li>
+			
+			<li >
+		        <p>一旦出现雷阵雨或阵雨征兆，应及时采取预防措施；城市火险天气等级4级高火险，请市民及各单位提高警惕，加强防火安全工作，排除火灾隐患，谨防各类火灾发生；霉变指数1级不易发生霉变；感冒指数4级发病率偏高，所有人特别是体质弱者老人及幼儿应注意冬天做好防寒保暖，尤其早晚外出时应注意添加衣服。
+		        </p>
+		        	
+		        
+		        <i>2013-11-19 18:51:50</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=22>
+		<h1 class="blogName">
+		    <img src="http://tp1.sinaimg.cn/1948750172/180/5600837862/1" title="辽宁气象" alt="辽宁气象" />
+		    <span>辽宁气象</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>沈阳：20日最高气温1度，15时多云，偏南风1级，相对湿度百分之61，空气较湿润，海平面气压1024百帕，气压正常，8至16时无降水。11月20日17时发布。
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 16:32:11</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>全省天气预报:20日白天到夜间全省晴，21日早晨最低气温抚顺、阜新地区零下11度到零下9度，沈阳、本溪、铁岭、朝阳、葫芦岛地区零下7度到零下6度，大连地区2度，其它地区零下5度到零下2度。21日白天到夜间全省晴。
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 05:54:41</i>
+		    </li>
+			
+			<li >
+		        <p>道路结冰黄色预警:预计19日夜间至20日早晨:抚顺、铁岭地区将出现对交通有影响的道路结冰,请注意防范。省气象灾害预警中心11月19日19时25分发布
+		        </p>
+		        
+		        	<a class="img" href="http://ww1.sinaimg.cn/large/7427915cjw1eaqjzand1jg202m029dfo.gif" target="_blank"><img src="http://ww1.sinaimg.cn/thumbnail/7427915cjw1eaqjzand1jg202m029dfo.gif"/></a>
+		        	
+		        
+		        <i>2013-11-19 19:27:51</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=33>
+		<h1 class="blogName">
+		    <img src="http://tp3.sinaimg.cn/2729096334/180/40021391536/1" title="福建气象" alt="福建气象" />
+		    <span>福建气象</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p><a class="a_topic" href="http://huati.weibo.com/k/%E5%A4%A9%E6%B0%94%E9%A2%84%E6%8A%A5?from=510">#天气预报#</a>【省气象台11月20日12时 发布】今天下午，全省晴到少云。今天夜间到21日白天，全省多云。21日早晨到上午，南平、三明两市的部分县市有雾或轻雾。21日夜间到22日白天，福州、莆田两市多云到阴，其余各市多云。22日夜间，全省多云。
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 11:43:33</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p><a class="a_topic" href="http://huati.weibo.com/k/%E5%A4%A9%E6%B0%94%E9%A2%84%E6%8A%A5?from=510">#天气预报#</a>【省气象台11月20日05时 发布】今天白天，全省晴到少云，今天夜间，龙岩、漳州多云到阴，其余地市多云。21日早晨到上午，南平、三明两市的部分县市有雾或轻雾。21日白天到夜间，龙岩、漳州多云到阴，其余地市多云。22日白天到夜间，全省多云。
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 06:15:12</i>
+		    </li>
+			
+			<li >
+		        <p>【秋冬最佳零食--栗子】栗子是秋冬非常受欢迎的零食，含有丰富的营养成分。中医认为，栗子性味甘温，有养胃健脾、补肾强筋等功效。栗子可生食、炒食、加水煮食等，在众多的食用方法中，生吃栗子补肾效果最佳。这是因为生栗子中酶和维生素C等的含量最高，细嚼慢咽时消化更充分，更利于人体吸收。
+		        </p>
+		        
+		        	<a class="img" href="http://ww4.sinaimg.cn/large/a2aab48ejw1eaqnp1x6h7j209e0b40tb.jpg" target="_blank"><img src="http://ww4.sinaimg.cn/thumbnail/a2aab48ejw1eaqnp1x6h7j209e0b40tb.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-19 21:36:22</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=6>
+		<h1 class="blogName">
+		    <img src="http://tp4.sinaimg.cn/2015316631/180/40022190738/1" title="广东天气" alt="广东天气" />
+		    <span>广东天气</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>【想知道现在的湿度吗？】全省14时相对湿度图显示花都湿度最低只有26%，我省中部偏北市县空气偏干。<img src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/62/crazya_org.gif" title="[抓狂]" alt="[抓狂]" type="face" />小编已经明显感觉眼睛干涩，鼻子呼吸不畅。比较简单的缓解方式是多喝水，在室内放置加湿器。<img src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/1b/m_org.gif" title="[话筒]" alt="[话筒]" type="face" />另外，用火要注意安全。
+		        </p>
+		        
+		        	<a class="img" href="http://ww3.sinaimg.cn/large/781f4a97jw1earhuojqcxj20ti0muwhw.jpg" target="_blank"><img src="http://ww3.sinaimg.cn/thumbnail/781f4a97jw1earhuojqcxj20ti0muwhw.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 14:59:47</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>【未来三天粤西多阴雨】20-22日粤西多阴雨，其余大部阴天为主；部分市县有轻雾或霾，请注意交通安全。23日，粤北阴天间多云转小到中雨，其余市县阴天到多云。24日我省将有一次明显降水过程。冷空气正在酝酿，本周末大家可以翻翻衣柜小做准备。
+		        </p>
+		        
+		        	<a class="img" href="http://ww1.sinaimg.cn/large/781f4a97jw1earam90qnbj207o09qdfw.jpg" target="_blank"><img src="http://ww1.sinaimg.cn/thumbnail/781f4a97jw1earam90qnbj207o09qdfw.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 10:49:30</i>
+		    </li>
+			
+			<li >
+		        <p>嗯嗯~ 今天全省普遍云量增多，局部还有小雨，比昨天清凉些。<img src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/89/hufen_org.gif" title="[互粉]" alt="[互粉]" type="face" />
+		        </p>
+		        
+		        	<a class="img" href="http://ww3.sinaimg.cn/large/7d79f02fjw1ear55cdjs0j20hs0bymyx.jpg" target="_blank"><img src="http://ww3.sinaimg.cn/thumbnail/7d79f02fjw1ear55cdjs0j20hs0bymyx.jpg"/></a>
+		        	
+		        
+		        <i>2013-11-20 09:18:45</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+ 	<li class="borderBg" data-index=24>
+		<h1 class="blogName">
+		    <img src="http://tp3.sinaimg.cn/2268282742/180/22852691284/1" title="新疆气象" alt="新疆气象" />
+		    <span>新疆气象</span>
+		</h1>
+		<ul class="blogNews">
+			
+			
+			<li class="blogNewsLine">
+		        <p>新源县气象局2013年11月20日13时45分发布寒潮蓝色预警信号：预计未来48小时新源大部最低气温将下降8℃以上，平原地区最低气温降至-10℃左右，山区最低气温降至-16℃左右；新源县域有大雪，局部地区有暴雪，偏西风5到6级，阵风7到8级，请注意防范。
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 17:01:38</i>
+		    </li>
+			
+			<li class="blogNewsLine">
+		        <p>新源县气象局11月20日10时05分发布大风蓝色预警信号：今天白天到夜间新源县域将出现大风天气，平均风力5到6级，阵风7到8级，注意预防。
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 17:01:15</i>
+		    </li>
+			
+			<li >
+		        <p>伊犁州气象台2013年11月20日13时05分发布寒潮蓝色预警信号：预计未来48小时河谷大部最低气温将下降8℃以上，平原地区最低气温降至-10℃左右，山区最低气温降至-16℃左右；河谷大部地区有大雪，局部地区有暴雪，偏西风5到6级，阵风7到8级，请注意防范。
+		        </p>
+		        	
+		        
+		        <i>2013-11-20 17:00:55</i>
+		    </li>
+			
+		</ul>
+	</li>
+
+</script>
+
+<div class="footer">
+  <div class="block">
+    <div class="Lcontent">
+      <h2><a href="http://www1.weather.com.cn/" title="中国天气网">中国天气</a></h2>
+      <dl style="width:240px;">
+        <dt>
+          <h3><a>网站服务</a></h3>
+        </dt>
+        <dd>
+          <p><a href="http://www.weather.com.cn/wzfw/gywm/">关于我们</a><a href="http://www.weather.com.cn/wzfw/gywm/">联系我们</a><a href="http://www.weather.com.cn/wzfw/sybz/">帮助</a><a href="http://www.weather.com.cn/wzfw/ryzp/">人员招聘</a></p>
+          <p><a href="http://www.weather.com.cn/wzfw/kfzx/">客服中心</a><a href="http://www.weather.com.cn/wzfw/bqsm/">版权声明</a><a href="http://www.weather.com.cn/wzfw/wzls/">律师</a><a href="http://www.weather.com.cn/wzfw/wzdt/">网站地图</a></p>
+        </dd>
+      </dl>
+      <dl style="width:138px;">
+        <dt>
+          <h3><a>营销中心</a></h3>
+        </dt>
+        <dd>
+          <p><a href="http://marketing.weather.com.cn/gyxfwcphz/">公益服务</a><a href="http://marketing.weather.com.cn/zyqxfw/">专业服务</a></p>
+          <p><a href="http://marketing.weather.com.cn/wxzdhz/">无线合作</a><a href="http://marketing.weather.com.cn/wzhz/">网站合作</a></p>
+        </dd>
+      </dl>
+      <div class="clear"></div>
+    </div>
+    <div class="friendLink">
+      <h3><a>友情链接</a></h3>
+      <p><a href="http://www.cma.gov.cn/" target="_blank">中国气象局</a><a href="http://www.tourweather.com.cn/" target="_blank">中国旅游天气网</a><a href="http://typhoon.weather.com.cn/" target="_blank">中国天气台风网</a></p>
+      <p><a href="http://www.xn121.com/" target="_blank">中国兴农网</a><a href="http://pmsc.cma.gov.cn/" target="_blank">中国气象局公共气象服务中心</a></p>
+    </div>
+    <div class="serviceinfo">
+      <p><span>客服邮箱：<a href="mailto:service@weather.com.cn">service@weather.com.cn</a></span><span>客户服务热线：<b>400-6000-121</b></span><span>京公网安备11041400134号</span></p>
+      <p><span>广告服务：<b>010-62134569</b></span><span><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP证010385号</a></span><span>增值电信业务经营许可证B2-20050053</span></p>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="aboutUs"> Copyright©<a href="http://pmsc.cma.gov.cn/" target="_blank">中国气象局公共气象服务中心</a> All Rights Reserved (2008-2013) 版权所有 复制必究 郑重声明：中国天气网版权所有，未经书面授权禁止使用 </div>
+</div>
+
+
+<script>W.use('j/weibo/index');</script>
+</body>
+</html>

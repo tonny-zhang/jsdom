@@ -1,4 +1,5 @@
 var util = require('../curl-weibo/util');
-util.curl('tianqi.2345.com',80,'/air-54511.htm?qq-pf-to=pcqq.c2c',function(err,data){
+
+util.curl('misc.weather.com.cn',80,'/',function(err,data){
 	console.log(err,data);
 });
