@@ -1,9 +1,11 @@
 var weiboConfig = [{
 	"desc": "旅游天气网",
-	"url": "http://weibo.com/2678492723"
+	"url": "http://weibo.com/2678492723",
+	"special": 1
 }, {
 	"desc": "中国天气通",
-	"url": "http://weibo.com/2319195074"
+	"url": "http://weibo.com/2319195074",
+	"special": 1
 }
 // , {
 // 	"desc": "天气插件",
@@ -11,13 +13,16 @@ var weiboConfig = [{
 // }
 , {
 	"desc": "中国天气网生活",
-	"url": "http://weibo.com/1400737000"
+	"url": "http://weibo.com/1400737000",
+	"special": 1
 }, {
 	"desc": "中国天气网气候变化频道",
-	"url": "http://weibo.com/2625476957"
+	"url": "http://weibo.com/2625476957",
+	"special": 1
 }, {
 	"desc": "中国兴农网",
-	"url": "http://weibo.com/xn121"
+	"url": "http://weibo.com/xn121",
+	"special": 1
 }
 // , {
 // 	"desc": "气象知识",

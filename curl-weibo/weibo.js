@@ -122,6 +122,7 @@ weiboConfig.forEach(function(v) {
 		if(err){
 			console.log(err);
 		}else{
+			data.special = v.special || 0;
 			dataArr.push(data);
 			console.log('\n===', data.user.title, '===\n');
 			console.log(data);
