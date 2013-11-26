@@ -1,4 +1,8 @@
 var weiboConfig = [{
+	"desc": "中国天气网",
+	"url": "http://weibo.com/weather01",
+	"special": 1
+},{
 	"desc": "旅游天气网",
 	"url": "http://weibo.com/2678492723",
 	"special": 1
@@ -190,6 +194,11 @@ var weiboConfig = [{
 // 	"url": "http://weibo.com/gdweather"
 // }
 // ]
+// weiboConfig = [{
+// 	"desc": "中国天气网",
+// 	"url": "http://weibo.com/weather01",
+// 	"special": 1
+// }]
 var path = require('path');
 var currentDir = __dirname;
 exports.conf = weiboConfig;
