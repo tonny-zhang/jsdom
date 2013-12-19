@@ -1,0 +1,28 @@
+
+=== undefined ===
+
+{ index: 0,
+  user: 
+   { title: undefined,
+     icon: 'http://tp2.sinaimg.cn/2506600245/180/5618199390/1' },
+  list: 
+   [ { content: '\n                                    花没采到，被蜜蜂蛰到了！这次没中奖，再玩一次吧！<a render="ext" extra-data="type=atname" href="/n/%E6%96%B0%E6%96%87%E5%8C%96%E6%8A%A5" usercard="name=新文化报">@新文化报</a>                         ',
+       time: '2013-04-23 13:43:39',
+       from: '专业版微博美食推',
+       commentNum: '4',
+       zhuanfaNum: 0,
+       img: [] },
+     { content: '\n                                    以后天气预报都由<a render="ext" extra-data="type=atname" href="/n/%E5%90%89%E6%9E%97%E6%B0%94%E8%B1%A1%E6%9C%8D%E5%8A%A1" usercard="name=吉林气象服务">@吉林气象服务</a> 发布了，谢谢各位亲的支持，<img render="ext" src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/d4/lxhdeyidixiao_org.gif" title="[得意地笑]" alt="[得意地笑]" type="face" />                        ',
+       time: '2013-03-23 12:47:38',
+       from: '专业版微博',
+       commentNum: '2',
+       zhuanfaNum: '2',
+       img: [] },
+     { content: '\n                                    吉林省气象台 2013年3月23日05时发布                        ',
+       time: '2013-03-23 05:05:22',
+       from: '分享按钮',
+       commentNum: '1',
+       zhuanfaNum: '3',
+       img: [] } ],
+  special: 0 }
+==== 共 1 个微博，总用时  1446  ms ===

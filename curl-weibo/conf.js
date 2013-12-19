@@ -179,26 +179,33 @@ var weiboConfig = [{
 // 	"url": "http://weibo.com/alaly"
 // }
 ];
-// weiboConfig = [
+weiboConfig = [
 // {
 // 	"desc": "广西气象",
 // 	"url": "http://weibo.com/guangxiweather"
 // }
-// , {
+// ,
+// , 
+{
+	"desc": "吉林气象",
+	"url": "http://weibo.com/2506600245"
+}
+// ,
+// //  {
+// // 	"desc": "广东天气",
+// // 	"url": "http://weibo.com/gdweather"
+// // }
+// // ]
+// // weiboConfig = [{
+// // 	"desc": "中国天气网",
+// // 	"url": "http://weibo.com/weather01",
+// // 	"special": 1
+// // }
+// {
 // 	"desc": "福建气象",
 // 	"url": "http://weibo.com/2729096334"
 // }
-// ,
-//  {
-// 	"desc": "广东天气",
-// 	"url": "http://weibo.com/gdweather"
-// }
-// ]
-// weiboConfig = [{
-// 	"desc": "中国天气网",
-// 	"url": "http://weibo.com/weather01",
-// 	"special": 1
-// }]
+]
 var path = require('path');
 var currentDir = __dirname;
 exports.conf = weiboConfig;

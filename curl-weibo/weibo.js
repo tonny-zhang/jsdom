@@ -30,6 +30,7 @@ Date.prototype.format = function(format){
 	
 	return format;
 }
+
 /*抓取微博核心方法*/
 function getWeibo(url, callback) {
 	var returnVal = {index:__index++}
@@ -37,6 +38,9 @@ function getWeibo(url, callback) {
 	jsdom.env({
 		url: url,
 		src: [jquery],
+		headers: {
+			'Cookie': 'SINAGLOBAL=3464053741190.5825.1382342748948; _s_tentry=pm25.in; UUG=usr431_27; UV5=usr313_126; UV5PAGE=usr513_135; Apache=8094938197173.178.1387415111066; ULV=1387415111071:6:1:1:8094938197173.178.1387415111066:1385429274695; myuid=1174313174; SUB=AcucHTmDLSPYWBegy39GoXkZ0%2FvLs8w%2Bz0FTlYSeEOyGp7pX3e5I1GtZGYE%2Fm6mz28zI04ROXLK%2BbhV9Rtpeeu1eqpNcG9%2FURUXlcHmjzxWV; login_sid_t=c37bfb7ea3e906ea893473e9502e34f4; UOR=,,login.sina.com.cn; V5REG=usr3138; appkey=; SUE=es%3Ddeb2836c180cdf1389cd6bcc446f3f76%26ev%3Dv1%26es2%3Db2064d7cb853dc76380bb375d66fca63%26rs0%3DsrMncov%252FVPKPDTKQYGcRwVzRJqAJf9nvYzhgOYlfb97lQP3SUMyl2iMXGMKrw%252B8Hcd%252FNPGiRjUpoHH1jn9zDI3jou0Mt8FTAwJJts2snFEjkF5ZvcqA0arVfNvp5QEHH7qtjNkG1D8C32OuQvSdnjFVX7BGuOp%252BXwt18d9DxYTo%253D%26rv%3D0; SUP=cv%3D1%26bt%3D1387421916%26et%3D1387508316%26d%3Dc909%26i%3Dc718%26us%3D1%26vf%3D0%26vt%3D0%26ac%3D0%26st%3D0%26uid%3D1174313174%26name%3Dwodexintiao%2540sina.com%26nick%3Dtonny_zhang%26fmp%3D%26lcp%3D; SUS=SID-1174313174-1387421916-XD-q1vbd-b8f6bf67ec2a71d4fb87dcc9fc515952; ALF=1390013916; SSOLoginState=1387421916; un=wodexintiao@sina.com; wvr=5'
+		},
 		done: function(errors, window) {
 			if(errors){
 				callback(errors);
@@ -52,13 +56,13 @@ function getWeibo(url, callback) {
 					var icon = logo_img.find('img').attr('src');
 				}
 			}else{
-				code = $('script:contains(pl.header.head.index)').text();
+				code = $('script:contains("pl\.header\.head\.index")').text();
 				if(code){
 					var m = code.match(REG_JSON);
 					if (m) {
 						var jsonObj = JSON.parse(m[0]);
 						var logo_img = $(jsonObj.html).find('.pf_head_pic img');
-						var title = logo_img.attr('title');
+						var title = logo_img.attr('title')||logo_img.attr('alt');
 						var icon = logo_img.attr('src');
 					}
 				}
@@ -134,6 +138,7 @@ weiboConfig.forEach(function(v) {
   				, str = fs.readFileSync(conf.tplFilePath, 'utf8');
 			var ret = ejs.render(str,{
 				dataArr: dataArr,
+				cDate: new Date().format(),
 				escape: function(html){
 					return String(html).replace(/^\s+|\s+$/,'').replace('\'',"\'")
 				}
