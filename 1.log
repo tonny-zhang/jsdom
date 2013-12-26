@@ -1,0 +1,13 @@
+1388055890
+{ uri: 'http://weibo.com/2506600245',
+  encoding: 'utf8',
+  headers: { Cookie: 'SINAGLOBAL=3464053741190.5825.1382342748948; myuid=1174313174; SUB=ActnWcIlIgzc0q81ZGEd%2BoWD72%2F6bvVG1Qgp4D2%2B7TCk6YAksBKf3lx1AR7t1CAc%2B29u0QQJKjmgS9%2FpLMojqVmhh%2BJxp8AmbjBVAltWO6ie; UOR=,,history.gmw.cn; UV5PAGE=usr513_138; _s_tentry=-; Apache=8022246200125.664.1387760318123; ULV=1387760319835:7:2:1:8022246200125.664.1387760318123:1387415111071; V5REG=usr3133; UUG=usr431_24; SUE=es%3D82a4213813a087dabf45d586b2aa2d13%26ev%3Dv1%26es2%3De5a1f65afe063c2c610cb4f37c644997%26rs0%3Dmo88nEWEBkg5W9U%252BOU58pBaVvENUqiORr%252BE%252Bizv6rpL0J%252FBtd588diwZe5hxWzHc9wQ61%252Bzq3ZWLChlApmz2uDoqFRljExWehPGvkf%252BNejfbZI3s10vjHm9qV%252FfuwGj6HZiwowT0lpYGT1SkwVEPFnRb3w2LUiqqa%252BuQeM5pupE%253D%26rv%3D0; SUP=cv%3D1%26bt%3D1387760338%26et%3D1387846738%26d%3Dc909%26i%3D3d45%26us%3D1%26vf%3D0%26vt%3D0%26ac%3D0%26st%3D0%26uid%3D1174313174%26name%3Dwodexintiao%2540sina.com%26nick%3Dtonny_zhang%26fmp%3D%26lcp%3D; SUS=SID-1174313174-1387760338-JA-unmre-008c0358a87487c5c04b48b35cdc5952; ALF=1390352338; SSOLoginState=1388055890; un=wodexintiao@sina.com' },
+  proxy: null }
+
+=== undefined ===
+
+{ index: 0,
+  user: { title: undefined, icon: undefined },
+  list: [],
+  special: 0 }
+==== 共 1 个微博，总用时  148  ms ===

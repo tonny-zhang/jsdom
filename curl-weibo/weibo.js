@@ -209,6 +209,6 @@ function login(callback){
 // 	// 	console.log(data);
 // 	// });
 // }
-login();
-// weibo_list();
+// login();
+weibo_list();
 

@@ -1,7 +1,7 @@
 ;(function(){
 	var http = require('http');
 	var url = require('url');
-	var resFn = function(res,callback){console.log(res);
+	var resFn = function(res,callback){
 		res.setEncoding('utf8');
 		var data = '';
 		res.on('data',function(d){
