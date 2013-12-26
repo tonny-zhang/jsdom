@@ -1,0 +1,15 @@
+http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=d29kZXhpbnRpYW9Ac2luYS5jb20=&client=ssologin.js(v1.3.16)string(775) "
+		<html>
+		<head>
+		<title>新浪通行证</title>
+		<meta http-equiv="refresh" content="0; url=&#39;http://weibo.com/ajaxlogin.php?framelogin=1&callback=parent.sinaSSOController.feedBackUrlCallBack&retcode=4403&reason=%B1%A7%C7%B8%A3%A1%B5%C7%C2%BC%CA%A7%B0%DC%A3%AC%C7%EB%C9%D4%BA%F2%D4%D9%CA%D4&#39;"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+		</head>
+		<body bgcolor="#ffffff" text="#000000" link="#0000cc" vlink="#551a8b" alink="#ff0000"><script type="text/javascript" language="javascript">
+		location.replace("http://weibo.com/ajaxlogin.php?framelogin=1&callback=parent.sinaSSOController.feedBackUrlCallBack&retcode=4403&reason=%B1%A7%C7%B8%A3%A1%B5%C7%C2%BC%CA%A7%B0%DC%A3%AC%C7%EB%C9%D4%BA%F2%D4%D9%CA%D4");
+		</script>
+		</body>
+		</html>"
+
+Warning: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in E:\source\jsdom\test\weibo.php on line 116
+2013-12-26 03:21:34|get cookie failured

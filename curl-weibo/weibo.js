@@ -1,7 +1,10 @@
 var jsdom = require('jsdom');
 var fs = require('fs');
 var path = require('path');
-
+var util = require('./util');
+var curl = util.curl;
+var base64_encode = util.base64_encode;
+var sha1 = util.sha1;
 var jquery = fs.readFileSync(path.join(__dirname,'jquery.js')).toString();
 
 var REG_JSON = /{.*}/;
@@ -30,7 +33,8 @@ Date.prototype.format = function(format){
 	
 	return format;
 }
-
+var toDate = parseInt(new Date().getTime()/1000) + 3600 * 5
+console.log(toDate);
 /*抓取微博核心方法*/
 function getWeibo(url, callback) {
 	var returnVal = {index:__index++}
@@ -39,7 +43,7 @@ function getWeibo(url, callback) {
 		url: url,
 		src: [jquery],
 		headers: {
-			'Cookie': 'SINAGLOBAL=3464053741190.5825.1382342748948; _s_tentry=pm25.in; UUG=usr431_27; UV5=usr313_126; UV5PAGE=usr513_135; Apache=8094938197173.178.1387415111066; ULV=1387415111071:6:1:1:8094938197173.178.1387415111066:1385429274695; myuid=1174313174; SUB=AcucHTmDLSPYWBegy39GoXkZ0%2FvLs8w%2Bz0FTlYSeEOyGp7pX3e5I1GtZGYE%2Fm6mz28zI04ROXLK%2BbhV9Rtpeeu1eqpNcG9%2FURUXlcHmjzxWV; login_sid_t=c37bfb7ea3e906ea893473e9502e34f4; UOR=,,login.sina.com.cn; V5REG=usr3138; appkey=; SUE=es%3Ddeb2836c180cdf1389cd6bcc446f3f76%26ev%3Dv1%26es2%3Db2064d7cb853dc76380bb375d66fca63%26rs0%3DsrMncov%252FVPKPDTKQYGcRwVzRJqAJf9nvYzhgOYlfb97lQP3SUMyl2iMXGMKrw%252B8Hcd%252FNPGiRjUpoHH1jn9zDI3jou0Mt8FTAwJJts2snFEjkF5ZvcqA0arVfNvp5QEHH7qtjNkG1D8C32OuQvSdnjFVX7BGuOp%252BXwt18d9DxYTo%253D%26rv%3D0; SUP=cv%3D1%26bt%3D1387421916%26et%3D1387508316%26d%3Dc909%26i%3Dc718%26us%3D1%26vf%3D0%26vt%3D0%26ac%3D0%26st%3D0%26uid%3D1174313174%26name%3Dwodexintiao%2540sina.com%26nick%3Dtonny_zhang%26fmp%3D%26lcp%3D; SUS=SID-1174313174-1387421916-XD-q1vbd-b8f6bf67ec2a71d4fb87dcc9fc515952; ALF=1390013916; SSOLoginState=1387421916; un=wodexintiao@sina.com; wvr=5'
+			'Cookie': 'SINAGLOBAL=3464053741190.5825.1382342748948; myuid=1174313174; SUB=ActnWcIlIgzc0q81ZGEd%2BoWD72%2F6bvVG1Qgp4D2%2B7TCk6YAksBKf3lx1AR7t1CAc%2B29u0QQJKjmgS9%2FpLMojqVmhh%2BJxp8AmbjBVAltWO6ie; UOR=,,history.gmw.cn; UV5PAGE=usr513_138; _s_tentry=-; Apache=8022246200125.664.1387760318123; ULV=1387760319835:7:2:1:8022246200125.664.1387760318123:1387415111071; V5REG=usr3133; UUG=usr431_24; SUE=es%3D82a4213813a087dabf45d586b2aa2d13%26ev%3Dv1%26es2%3De5a1f65afe063c2c610cb4f37c644997%26rs0%3Dmo88nEWEBkg5W9U%252BOU58pBaVvENUqiORr%252BE%252Bizv6rpL0J%252FBtd588diwZe5hxWzHc9wQ61%252Bzq3ZWLChlApmz2uDoqFRljExWehPGvkf%252BNejfbZI3s10vjHm9qV%252FfuwGj6HZiwowT0lpYGT1SkwVEPFnRb3w2LUiqqa%252BuQeM5pupE%253D%26rv%3D0; SUP=cv%3D1%26bt%3D1387760338%26et%3D1387846738%26d%3Dc909%26i%3D3d45%26us%3D1%26vf%3D0%26vt%3D0%26ac%3D0%26st%3D0%26uid%3D1174313174%26name%3Dwodexintiao%2540sina.com%26nick%3Dtonny_zhang%26fmp%3D%26lcp%3D; SUS=SID-1174313174-1387760338-JA-unmre-008c0358a87487c5c04b48b35cdc5952; ALF=1390352338; SSOLoginState='+toDate+'; un=wodexintiao@sina.com'
 		},
 		done: function(errors, window) {
 			if(errors){
@@ -115,35 +119,96 @@ function getWeibo(url, callback) {
 	});
 }
 
-var conf = require('./conf');
-var weiboConfig = conf.conf;
-var startTime = +new Date();
-var num = weiboConfig.length;
-var totalNum = num;
-var dataArr = [];
-weiboConfig.forEach(function(v) {
-	getWeibo(v.url, function(err,data) {
-		if(err){
-			console.log(err);
-		}else{
-			data.special = v.special || 0;
-			dataArr.push(data);
-			console.log('\n===', data.user.title, '===\n');
-			console.log(data);
-		}
-		if(--num == 0){
-			console.log('==== 共',totalNum,'个微博，总用时 ',+new Date()-startTime,' ms ===');
-			var ejs = require('ejs')
-				, fs = require('fs')
-  				, str = fs.readFileSync(conf.tplFilePath, 'utf8');
-			var ret = ejs.render(str,{
-				dataArr: dataArr,
-				cDate: new Date().format(),
-				escape: function(html){
-					return String(html).replace(/^\s+|\s+$/,'').replace('\'',"\'")
+var weibo_conf = {
+	'user': 'wodexintiao@sina.com',
+	'pwd': '1988221'
+}
+function weibo_list(){
+	var conf = require('./conf');
+	var weiboConfig = conf.conf;
+	var startTime = +new Date();
+	var num = weiboConfig.length;
+	var totalNum = num;
+	var dataArr = [];
+	weiboConfig.forEach(function(v) {
+		getWeibo(v.url, function(err,data) {
+			if(err){
+				console.log(err);
+			}else{
+				data.special = v.special || 0;
+				dataArr.push(data);
+				console.log('\n===', data.user.title, '===\n');
+				console.log(data);
+			}
+			if(--num == 0){
+				console.log('==== 共',totalNum,'个微博，总用时 ',+new Date()-startTime,' ms ===');
+				var ejs = require('ejs')
+					, fs = require('fs')
+	  				, str = fs.readFileSync(conf.tplFilePath, 'utf8');
+				var ret = ejs.render(str,{
+					dataArr: dataArr,
+					cDate: new Date().format(),
+					escape: function(html){
+						return String(html).replace(/^\s+|\s+$/,'').replace('\'',"\'")
+					}
+				});
+				fs.writeFileSync(conf.resultFilePath,ret, 'utf8');
+			}
+		});
+	});
+}
+function login(callback){
+	curl("http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=" + base64_encode(weibo_conf['user']) + "&client=ssologin.js(v1.4.11)",function(err,data){
+		if(!err){			
+			var m = data.match(REG_JSON);
+			if(m){
+				var prelogin_data = JSON.parse(m[0]);
+				console.log(prelogin_data);
+				if(prelogin_data && 
+					prelogin_data['retcode'] === 0 && 
+					prelogin_data['servertime'] != null && 
+					prelogin_data['nonce'] && 
+					prelogin_data['servertime'] != null){
+
+					var post_data = {
+						'entry': 'weibo',
+			            'gateway': 1,
+			            'from': '',
+			            'savestate': 7,
+			            'useticket': 1,
+			            'ssosimplelogin': 1,
+			            'su': base64_encode(weibo_conf['user']),
+			            'service': 'miniblog',
+			            'servertime': prelogin_data['servertime'],
+			            'nonce': prelogin_data['nonce'],
+			            'pwencode': 'wsse',
+			            'sp': sha1(sha1(sha1(weibo_conf['pwd'])) + prelogin_data['servertime'] + prelogin_data['nonce']),
+			            'encoding': 'UTF-8',
+			            'url': 'http://weibo.com/ajaxlogin.php?framelogin=1&callback=parent.sinaSSOController.feedBackUrlCallBack',
+			            'returntype': 'META'
+					}
+					curl.post('http://login.sina.com.cn/sso/login.php?client=ssologin.js(v1.4.11)',post_data,function(err,data){
+						if(!err){
+							console.log(data);
+							callback && callback();
+						}
+					});
 				}
-			});
-			fs.writeFileSync(conf.resultFilePath,ret, 'utf8');
+			}
 		}
 	});
-});
+}
+// function login(){
+// 	jsdom.env({
+// 		url: 'http://weibo.com/',
+// 		done: function(errors, window) {
+// 			console.log(window.$);
+// 		}
+// 	});
+// 	// curl('http://weibo.com/',function(err,data){
+// 	// 	console.log(data);
+// 	// });
+// }
+login();
+// weibo_list();
+
