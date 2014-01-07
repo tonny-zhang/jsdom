@@ -165,12 +165,11 @@ W.use('j/tool/DD_belatedPNG',function(DD_belatedPNG){
 			<% var len = item.list.length;%>
 			<% item.list.forEach(function(weiboItem,i){%>
 			<li <%=i<len-1?'class="blogNewsLine"':''%>>
-		        <p><%= weiboItem.content %>
+		        <p><%= weiboItem.text %>
 		        </p>
-		        <% weiboItem.img.forEach(function(img){%>
-		        	<a class="img" href="<%=img.replace('thumbnail','large')%>" target="_blank"><img src="<%=img%>"/></a>
-		        <% }) %>	
-		        
+            <% if(weiboItem.pic && weiboItem.bpic){ %>
+            <a class="img" href="<%=weiboItem.bpic%>" target="_blank"><img src="<%=weiboItem.pic%>"/></a>
+		        <% } %>
 		        <i><%= weiboItem.time %></i>
 		    </li>
 			<% }) %>
