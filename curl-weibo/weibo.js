@@ -28,6 +28,9 @@ Date.prototype.format = function(format) {
 
 	return format;
 }
+var formatURL = function(url){
+	return (url||'').replace(/\\/g,'');
+}
 var username = 'info@weather.com.cn';
 var pwd = '!@#123';
 var checkloginUrl = 'http://weibo.com/u/3972127579/home?wvr=5'
@@ -57,7 +60,7 @@ weibo.login(username, pwd, checkloginUrl, function(err, API) {
 							var d = result.data;
 							returnVal.user = {
 								'title': d.nick || nick,
-								'icon': d.icon
+								'icon': formatURL(d.icon)
 							};
 							callback(null, returnVal);
 						}
